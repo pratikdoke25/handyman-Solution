@@ -1,0 +1,578 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap, Consulting Template, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="GridTemplate">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--====== Title ======-->
+    <title>Ganesh - Handy Solutions</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== icofont Icons css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!--====== Slick slider CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--====== animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Common container to ensure uniform margin and padding */
+        .common-container {
+            width: 90%; /* Set container width to 90% of the screen */
+            margin: 0 auto; /* Center the container with equal left and right margins */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .container1 {
+            width: 90%;
+            margin: 0 auto; /* Ensures uniform left and right margins */
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+    
+        .menu-logo {
+            display: flex;
+            align-items: flex-start; /* Aligns the logo towards the top */
+            justify-content: center; /* Center align the logo horizontally */
+        }
+    
+        .menu-logo img {
+            margin-top: -40px; /* Increase the negative value to shift the image slightly further up */
+            max-width: 135px; /* Increase the width of the image */
+            height: 135px; /* Increase the height of the image */
+        }
+    
+        .painting-services-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+    
+        .image-container {
+            flex: 1;
+            max-width: 50%;
+        }
+    
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+    
+        .image-container img:hover {
+            transform: scale(0.9); /* Zoom out on hover */
+        }
+    
+        .text-container {
+            flex: 1;
+            text-align: left;
+            font-size: 1.1em;
+        }
+    
+        .text-container ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    
+        .images-and-text-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+    
+        .image-text-item {
+            flex: 1 1 45%;
+            max-width: 45%;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .image-text-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+    
+        .image-text-item img:hover {
+            transform: scale(0.9); /* Zoom out on hover */
+        }
+    
+        .image-text-item h3 {
+            font-size: 1.5em;
+            color: black;
+            margin: 10px 0;
+        }
+    
+        .image-text-item p {
+            font-size: 1em;
+            color: #333;
+        }
+    
+        .image-wrapper1 {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+    
+        .reduced-height-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    
+        .overlay-text1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+        }
+    
+        /* intro text */
+        .intro h1 {
+            color: red; /* Set the text color to red */
+            text-align: center; /* Align the header to the center */
+            padding-top: 30px;
+        }
+    
+        .intro p {
+            padding-top: 30px;
+            margin-top: 30px;
+        }
+    
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            /* Painting services container - stack elements vertically */
+            .painting-services-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px; /* Reduce gap for mobile view */
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .image-container,
+            .text-container {
+                max-width: 100%;
+            }
+    
+            /* Images and text container - make items full width */
+            .images-and-text-container {
+                padding: 10px; /* Reduce padding for better fit */
+            }
+    
+            .image-text-item {
+                max-width: 100%;
+                flex: 1 1 100%;
+                margin: 0 auto;
+            }
+    
+            /* Overlay text adjustment */
+            .overlay-text1 {
+                font-size: 2em; /* Reduce font size for overlay text */
+            }
+    
+            /* Menu logo */
+            .menu-logo img {
+                max-width: 100px; /* Adjust logo size */
+                height: 100px;
+                margin-top: -20px;
+            }
+    
+            /* Header font size adjustment */
+            header h1 {
+                font-size: 2em; /* Reduce header size */
+            }
+    
+            /* Text container adjustments */
+            .text-container {
+                font-size: 1em; /* Slightly smaller font for mobile */
+                padding: 0 10px;
+            }
+    
+            /* Image hover effect removed for mobile to prevent zoom-out issues */
+            .image-container img:hover,
+            .image-text-item img:hover {
+                transform: none;
+            }
+        }
+    </style>
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="gridtemplate-loader">
+        <div class="preloader">
+            <div class="spinner"></div>
+            <img class="preload-logo" src="assets/images/normal/favicon.svg">
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area header_style_2">
+
+        <div class="header-menu-area d-none d-lg-block">
+
+
+            <div class="toolbar-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-9 col-12">
+                            <div class="toolbar-contact">
+                                <p><i class="flaticon-email"></i><a href="mailto:info@example.com">info@example.com</a>
+                                </p>
+                                <p><i class="flaticon-phone-call"></i><a href="tel:+440-98-5298">Tel: +440-98-5298</a>
+                                </p>
+                                <p><i class="flaticon-placeholder"></i> 777 Road, Brooklyn New York</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="menu-logo">
+                                <a class="logo" href="index2.html">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 d-flex justify-content-center">
+                            <div class="navbar-menu">
+                                <ul class="">
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="cleaning.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                            <li><a href="painting.html">Painting</a></li>
+                                            <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                            <li><a href="services.html">Other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="why-choose-us.html">Why Choose Us</a>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+
+            </div>
+        </div> <!-- header menu area -->
+
+        <div class="header-mobile-menu d-lg-none">
+            <div class="container">
+                <div class="mobile-menu d-flex justify-content-between align-items-center">
+                    <div class="menu-bar">
+                        <a class="mobile-menu-open" href="javascript:void(0)"><i class="flaticon-menu"></i></a>
+                    </div>
+                    <div class="mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                        </a>
+                    </div> <!-- mobile logo -->
+
+                </div> <!-- mobile menu -->
+            </div> <!-- container -->
+        </div> <!-- header mobile menu -->
+
+    </header>
+    <!-- Header End -->
+    <div class="image-text-container1">
+        <div class="image-wrapper1">
+            <img src="./assets/images/Main/painting/Brown wood.png" alt="Painting Services" class="reduced-height-image">
+            <div class="overlay-text1">Painting Services</div> <!-- Overlay text -->
+        </div>
+    </div>
+    
+    <div class="container1">
+        <div class="intro">
+            <h1>Painting Services We Specialize In</h1>
+            <p>Our craftspeople at Handyman Connection provide a variety of painting services to our customers. Whether
+                your required jobs are inside or outside of your home, our handymen will handle the job with their
+                practiced expertise and quality results. Projects to be completed inside the home include interior
+                painting any rooms, hallways, or ceilings. All painting jobs can receive a faux finish or texture as
+                well. Add detail to or clean up a room’s appearance with services such as painting the baseboards,
+                accents, and trims. We don’t only paint, our handymen can also hang wallpaper and add a border to your
+                wallpaper as well.
+
+            </p>
+        </div>
+        <div class="painting-services-container">
+            <div class="image-container">
+                <img src="./assets/images/Main/painting.jpg" alt="Painting services image">
+            </div>
+            <div class="text-container">
+                <h3>Painting Services</h3>
+                <p>Painting services outside the home include complete exterior painting, and even servicing your decks
+                    and patios. We are the ones for the job if you want your deck, railings, fences, or all of the
+                    above, to be power washed, painted, or stained for a whole new fresh look.
+
+                    Our services are varied and are many. Let’s complete that home project that has been waiting to be
+                    done for a while now. A fresh coat of paint, new wallpaper, or a staining update is a whole new
+                    breath of life into your home.</p>
+                <ul>
+                    <li>Faux finish painting and texture</li>
+                    <li>Painting accents, baseboards and trim</li>
+                    <li>Hanging wallpaper</li>
+                    <li>Adding wallpaper borders</li>
+                    <li>Power washing decks and fences</li>
+                    <li>Staining decks and fences</li>
+                </ul>
+            </div>
+        </div>
+        <div class="images-and-text-container">
+            <div class="image-text-item">
+                <img src="./assets/images/Main/painting/painting-women.webp" alt="Painting Women">
+                <h3>Painting Tips for Interior Walls</h3>
+                <p>These painting tips can help even amateur DIYers achieve professional-quality results! Learn how to prepare and paint your interior walls like a pro...</p>
+            </div>
+            <div class="image-text-item">
+                <img src="./assets/images/Main/painting/interior-painting.webp" alt="Interior Painting">
+                <h3>How to Achieve a Perfect Finish</h3>
+                <p>To calculate how much paint you need, multiply the length by the height of your walls. Follow our guide to get that perfect, streak-free finish...</p>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    <!-- footer Start -->
+    <footer class="footer-area footer_style2">
+        <div class="footer-widget pt-30 pb-50"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-address pt-20"> <!-- Reduced padding top -->
+                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
+                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                                    <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
+                                </div>
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                </div>
+                            </div>
+                            
+                            <ul>
+                                <li>
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
+                                            consequat <br> dignissim finibus enim. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-address py-2 d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">55 Broklyn Street</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-placeholder"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">+352-807-5248</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">hello@gridtemplate.com</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                            </ul>
+                        </div> <!-- footer address -->
+                    </div>
+    
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
+                            <ul>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Home</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Services</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
+                            <div class="instagram_img pt-10"> <!-- Reduced padding top -->
+                                <ul>
+                                    <li class=""><a href=""><img src="assets/images/instagram/1.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/2.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/3.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=""><a href=""><img src="assets/images/instagram/4.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- footer Instagram Feeds -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
+    
+                            <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
+                                <p>Lorem ipsum dolor sit amet, consectetur <br>
+                                    adipiscing elit. Nulla , tempor </p>
+                            </div>
+    
+                            <div class="subscribe_email">
+                                <input type="email" name="email" class="form-control" placeholder="Your email...">
+                                <button class="btn main-btn mouse-hover" type="submit">Subscription
+                                    <span></span></button>
+                            </div>
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    
+        <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="copyright-section d-md-flex align-items-center justify-content-between">
+                    <div class="copyright text-center">
+                        <p class="pt-2 text">All copyrights reserved © 2024 - Designed & Developed by <a
+                                href="https://gridtemplate.com/">Fourise Software Solution PVT.LTD</a> </p>
+                    </div> <!-- copyright -->
+                    <div class="footer-bottom text-center pt-10"> <!-- Reduced padding top -->
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- payment -->
+                </div> <!-- copyright payment -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top back-blue"><i class="flaticon-up-arrow"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+
+        // preloader
+        $(window).on('load', function (event) {
+            $('.gridtemplate-loader').delay(500).fadeOut(500);
+
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

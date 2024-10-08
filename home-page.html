@@ -1,0 +1,1148 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap, Consulting Template, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="GridTemplate">
+
+    <!--====== Title ======-->
+    <title>Ganesh - Handyman Services</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== icofont Icons css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!--====== Slick slider CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--====== animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu-logo {
+            display: flex;
+            align-items: flex-start;
+            /* Aligns the logo towards the top */
+            justify-content: center;
+            /* Center align the logo horizontally */
+        }
+
+        .menu-logo img {
+            margin-top: -40px;
+            /* Increase the negative value to shift the image slightly further up */
+            max-width: 135px;
+            /* Increase the width of the image */
+            height: 135px;
+            /* Increase the height of the image */
+        }
+
+        .footer-copyright {
+            background-color: #f0f0f0;
+        }
+
+        .container2 {
+            background-color: #e0e0e0;
+        }
+
+        .copyright-section {
+            background-color: #d0d0d0;
+        }
+
+        .copyright {
+            background-color: #c0c0c0;
+        }
+
+        .footer-bottom {
+            background-color: #a0a0a0;
+        }
+
+        .social-icons ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons li {
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* conatct us button css */
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            /* Button background color */
+            color: white;
+            /* Button text color */
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Smooth transitions */
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+            /* Darker shade for hover */
+            transform: translateY(-2px);
+            /* Lifts the button on hover */
+        }
+
+        .contact-button i {
+            margin-left: 8px;
+            /* Adds space between the text and the icon */
+        }
+         /* Modal styles */
+         .modal {
+            position: fixed;
+            top: 50%;
+            /* Center vertically */
+            left: 50%;
+            /* Center horizontally */
+            transform: translate(-50%, -50%);
+            /* Offset by half the width and height */
+            width: 300px;
+            /* Adjust width to your preference */
+            height: auto;
+            /* Adjust height based on content */
+            background-color: rgba(30, 222, 23, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            /* Add padding for spacing */
+            border-radius: 5px;
+            /* Rounded corners */
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add shadow for depth */
+        }
+
+      .modal-content  h2 {
+            margin: 0;
+            /* Remove default margin */
+            font-size: 20px;
+            /* Font size for the title */
+        }
+
+        .modal-content p {
+            margin: 10px 0 0;
+            /* Spacing for the message */
+            color: green;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="gridtemplate-loader">
+        <div class="preloader">
+            <div class="spinner"></div>
+            <img class="preload-logo" src="assets/images/normal/favicon.svg">
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+
+        <div class="header-menu-area d-none d-lg-block">
+
+
+            <div class="toolbar-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-9 col-12">
+                            <div class="toolbar-contact">
+                                <p><i class="flaticon-email"></i><a href="mailto:info@example.com">info@example.com</a>
+                                </p>
+                                <p><i class="flaticon-phone-call"></i><a href="tel:+440-98-5298">Tel: +352-807-5248</a>
+                                </p>
+                                <p><i class="flaticon-placeholder"></i> 777 Road, Brooklyn New York</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-facebook-circular-logo"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-pinterest-social-logo"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0)"><i class="flaticon-twitter"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="header-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="menu-logo ">
+                                <a class="logo" href="index2.html">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 d-flex justify-content-center">
+                            <div class="navbar-menu">
+                                <ul class="">
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="cleaning.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                            <li><a href="painting.html">Painting</a></li>
+                                            <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                            <li><a href="services.html">Other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="why-choose-us.html">Why Choose Us</a>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-2 text-lg-end">
+                            <div class="button">
+                                <a class="btn main-btn mouse-hover" href="javascript:void(0)">Get a Quote<span></span></a>
+                            </div>
+                        </div> -->
+                    </div> <!-- row -->
+                </div> <!-- container -->
+
+            </div>
+        </div> <!-- header menu area -->
+
+        <div class="header-mobile-menu d-lg-none">
+            <div class="container">
+                <div class="mobile-menu d-flex justify-content-between align-items-center">
+                    <div class="menu-bar">
+                        <a class="mobile-menu-open" href="javascript:void(0)"><i class="flaticon-menu"></i></a>
+                    </div>
+                    <div class="mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                        </a> <!-- mobile logo -->
+
+                </div> <!-- mobile menu -->
+            </div> <!-- container -->
+        </div> <!-- header mobile menu -->
+
+        <div id="home" class="header_hero">
+            <div class="container-fluid px-0">
+
+
+                <div class="slider-area home-slider">
+                    <div class="single-slider" style="background: #020306 url(assets/images/slider/1.png)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <div class="slider-content text-lg-start">
+                                        <h5 class="sub-title" data-animation="fadeInDown" data-delay="0.3s">Ganesh
+                                            Handyman Solution</h5>
+                                        <h2 class="slider-title" data-animation="fadeInUp" data-delay="0.5s"> Cleaning,
+                                            Painting,
+                                            Home Maintenance, Drywall Repair, Rustic Pergolas
+                                        </h2>
+                                        <p class="text" data-animation="fadeInUp" data-delay="0.7s">Trust Your Home to
+                                            Ganesh HandyMan Solutions</p>
+
+                                        <div class="py-3 " data-animation="fadeInUp" data-delay="0.9s">
+                                            <a class="btn main-btn mouse-hover" href="/contact.html">Contact
+                                                Us<span></span><i class="flaticon-arrow-pointing-to-right"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> <!-- row -->
+                        </div> <!-- container -->
+                    </div> <!-- single slider -->
+                    <div class="single-slider" style="background:#020306 url(assets/images/slider/2.png)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slider-content text-lg-start">
+                                        <h5 class="sub-title" data-animation="fadeInDown" data-delay="0.3s">Ganesh
+                                            Handyman Solutions </h5>
+                                        <h2 class="slider-title" data-animation="fadeInUp" data-delay="0.5s">Home
+                                            Improvement, Maintenance, & Repair
+                                        </h2>
+                                        <p class="text" data-animation="fadeInUp" data-delay="0.7s">Home maintenance and
+                                            repair are essential for keeping your house in good condition.<br>
+                                            Regular upkeep helps prevent major issues, ensuring your home remains safe,
+                                            comfortable, and efficient.</p>
+
+                                        <div class="py-3" data-animation="fadeInUp" data-delay="0.9s">
+                                            <a class="btn main-btn mouse-hover" href="/contact.html">Contact
+                                                Us<span></span><i class="flaticon-arrow-pointing-to-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- row -->
+                        </div> <!-- container -->
+                    </div> <!-- single slider -->
+                    <div class="single-slider" style="background:#020306 url(assets/images/slider/3.png)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slider-content text-center">
+                                        <h5 class="sub-title" data-animation="fadeInDown" data-delay="0.3s">Our
+                                            craftspeople are here for you.</h5>
+                                        <h2 class="slider-title" data-animation="fadeInUp" data-delay="0.5s">Make the
+                                            most of your home now more than ever!
+                                        </h2>
+                                        <p class="text" data-animation="fadeInUp" data-delay="0.7s">Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit. Nulla , <br>
+                                            tempor et ex consequat, dignissim finibus enim. Donec feugi</p>
+
+                                        <div class="py-3" data-animation="fadeInUp" data-delay="0.9s">
+                                            <a class="btn m-auto  main-btn mouse-hover" href="/contact.html">Contact
+                                                Us<span></span><i class="flaticon-arrow-pointing-to-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- row -->
+                        </div> <!-- container -->
+                    </div> <!-- single slider -->
+                    <div class="single-slider" style="background:#020306 url(assets/images/slider/4.png)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slider-content text-lg-start">
+                                        <h5 class="sub-title" data-animation="fadeInDown" data-delay="0.3s">Ganesh
+                                            Handyman Solutions</h5>
+                                        <h2 class="slider-title" data-animation="fadeInUp" data-delay="0.5s">We take
+                                            pride in our work
+                                        </h2>
+                                        <p class="text" data-animation="fadeInUp" data-delay="0.7s">Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit. Nulla , <br>
+                                            tempor et ex consequat, dignissim finibus enim. Donec feugi</p>
+
+                                        <div class="py-3" data-animation="fadeInUp" data-delay="0.9s">
+                                            <a class="btn main-btn mouse-hover" href="#">Contact Us<span></span><i
+                                                    class="flaticon-arrow-pointing-to-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- row -->
+                        </div> <!-- container -->
+                    </div> <!-- single slider -->
+                </div>
+
+            </div> <!-- container -->
+        </div> <!-- header hero -->
+
+
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== OFFCANVAS MOBILE MENU PART START ======-->
+
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
+
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index1.html">Home 01</a></li>
+                                <li><a class="active" href="index2.html">Home 02</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="services.html">Service</a></li>
+                                <li><a href="services-details.html">Service Details</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                            <ul class="sub-menu">
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="pricing.html">Our Pricing</a></li>
+                                <li><a href="404.html">404</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single-post.html">Blog details</a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <!--====== OFFCANVAS MOBILE MENU PART START ======-->
+
+
+
+    <!--====== WHY CHOOSING PART START ======-->
+
+    <section class="why-choosing-area pt-100 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center pb-20">
+                        <h3 class="title">Why Choose Ganesh Handyman Solutions</h3>
+                        <p>anesh Handyman Solutions offers reliable, professional, and high-quality services for both
+                            residential and commercial needs. Our skilled technicians have years of experience, ensuring
+                            that every task is completed efficiently and to the highest standards.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+
+            <div class="row  align-items-center justify-content-center">
+
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single_choosing text-lg-start">
+                                <div class="coosing-icon">
+                                    <img class="img-fluid" src="assets/images/icons/1.png">
+                                </div>
+                                <div class="coosing-content">
+                                    <h5>We're trustworthy.</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Nulla , tempor et ex
+                                        consequat, dignissim.</p>
+                                    <a href="/contact.html" class="contact-button">Contact Us</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single_choosing text-lg-start">
+                                <div class="coosing-icon">
+                                    <img class="img-fluid" src="assets/images/icons/2.png">
+                                </div>
+                                <div class="coosing-content">
+
+                                    <h5>Convenient one-call solution.</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Nulla , tempor et ex
+                                        consequat, dignissim.</p>
+                                    <a href="/contact.html" class="contact-button">Contact Us</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single_choosing text-lg-start">
+                                <div class="coosing-icon">
+                                    <img class="img-fluid" src="assets/images/icons/3.png">
+                                </div>
+
+                                <div class="coosing-content">
+                                    <h5>Safe, worry-free experience.</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Nulla , tempor et ex
+                                        consequat, dignissim.</p>
+                                    <a href="/contact.html" class="contact-button">Contact Us</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div> <!-- container -->
+    </section>
+    <!--====== WHY CHOOSING PART ENDS ======-->
+    <!--====== BUILD YOUR BUSINESS  PART START ======-->
+
+    <section class="build_business pb-100 pt-100">
+
+        <div class="business_image d-flex align-items-center align-items-center justify-content-end ">
+
+            <img src="assets/images/normal/business.webp" class="img-fluid">
+
+
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-end">
+
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h3 class="title">Build Your Business the Right Way with Ganesh Handyman Services</h3>
+
+                    </div>
+
+                    <div class="build_info">
+                        <p>Ganesh Handyman Services provides top-quality handyman solutions for both residential and
+                            commercial clients. From plumbing and electrical work to carpentry and painting, our skilled
+                            technicians are here to help you build and maintain your property efficiently and
+                            effectively. We take pride in our commitment to customer satisfaction, quality
+                            craftsmanship, and prompt service.</p>
+
+                        <div class="build_list">
+                            <h5><i class="flaticon-enter"></i>Company Experience</h5>
+                            <p>With years of experience in the industry, Ganesh Handyman Services is dedicated to
+                                delivering professional and reliable services you can trust.
+                                <br>
+                                elit. Vivamus sagittis dolor est,
+                            </p>
+                        </div>
+                        <div class="build_list">
+                            <h5><i class="flaticon-enter"></i>Company Experience</h5>
+                            <p>Ganesh Handyman Services offers comprehensive solutions for residential and commercial
+                                properties.<br>
+                                We are the trusted choice for all your handyman needs, delivering reliable and
+                                professional
+                                results every time.</p>
+                        </div>
+                        <div class="build_list"></div>
+                        <h5><i class="flaticon-enter"></i>Company Experience</h5>
+                        <p>Ganesh Handyman Services offers comprehensive solutions for residential and commercial
+                            properties.<br>
+                            We are the trusted choice for all your handyman needs, delivering reliable and
+                            professional
+                            results every time.</p>
+                    </div>
+                    <a class="btn my-3 main-btn mouse-hover" href="#">More details<span></span><i
+                            class="flaticon-arrow-pointing-to-right"></i></a>
+                </div>
+
+            </div>
+        </div> <!-- row -->
+
+        </div> <!-- container -->
+
+
+
+    </section>
+
+    <!--====== BUILD YOUR BUSINESS  PART ENDS ======-->
+
+    <!--====== OUR RECENT CASE STUDIES SART PART START ======-->
+
+    <section class="recent_case_area">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center ">
+                        <h3 class="title">Recent Case Studies</h3>
+                        <p>
+                            Ganesh Handyman Services has successfully completed various residential and commercial
+                            projects, demonstrating our expertise in plumbing, electrical work, carpentry, painting, and
+                            general maintenance. Our recent case studies highlight the quality, efficiency, and
+                            professionalism of our team, showcasing our ability to meet clients' needs and deliver
+                            exceptional results. These projects exemplify our commitment to customer satisfaction and
+                            the diverse range of solutions we provide for maintaining and improving properties.</p>
+
+                    </div> <!-- section title -->
+
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="single-case-studies text-center">
+                        <a href="portfolio-details.html">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/case/1.jpg">
+                                <figcaption>
+
+                                    <div class="hover-info">
+                                        <h5>Case Studies</h5>
+                                        <span>Handyman Services</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="single-case-studies text-center">
+                        <a href="portfolio-details.html">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/case/2.jpg">
+                                <figcaption>
+
+                                    <div class="hover-info">
+                                        <h5>Case Studies</h5>
+                                        <span>Handyman Services</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="single-case-studies text-center">
+                        <a href="portfolio-details.html">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/case/3.jpg">
+                                <figcaption>
+
+                                    <div class="hover-info">
+                                        <h5>Case Studies</h5>
+                                        <span>Handyman Services</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="row pt-30">
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="single-case-studies text-center">
+                        <a href="portfolio-details.html">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/case/4.jpg">
+                                <figcaption>
+
+                                    <div class="hover-info">
+                                        <h5>Case Studies</h5>
+                                        <span>Handyman Services</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="single-case-studies text-center">
+                        <a href="portfolio-details.html">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/case/5.jpg">
+                                <figcaption>
+
+                                    <div class="hover-info">
+                                        <h5>Case Studies</h5>
+                                        <span>Handyman Services</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <div class="single-case-studies text-center">
+                        <a href="portfolio-details.html">
+                            <figure>
+                                <img class="img-fluid" src="assets/images/case/6.webp">
+                                <figcaption>
+
+                                    <div class="hover-info">
+                                        <h5>Case Studies</h5>
+                                        <span>Handyman Services</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div> <!-- container -->
+    </section>
+
+    <!--====== OUR RECENT CASE STUDIES SART PART ENDS ======-->
+    <!--====== REQUEST CALL BACK PART START ======-->
+
+    <section class="request_call_back_area pt-130 pb-130">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="question_area">
+                        <div class="section-title text-lg-start">
+                            <h3 class="title">Asked Your Question Here</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet pharetra <br>
+                                nisl, ullamcorper consequat dui blandit et. Duis mauris orci, gravida sed justo eget,
+                                <br>
+                                mattis tristique justo. Ut orci magna,
+                            </p>
+
+                        </div> <!-- section title -->
+
+                        <div class="question_accordion">
+                            <div class="accordion" id="requestCall">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            What types of residential handyman services do you offer?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#requestCall">
+                                        <div class="accordion-body">
+                                            We offer a wide range of residential services, including plumbing,
+                                            electrical work, painting, carpentry, and general repairs.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Do you provide services for commercial properties?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#requestCall">
+                                        <div class="accordion-body">
+                                            Yes, we provide commercial handyman services, including office maintenance,
+                                            minor renovations, and repair work for retail and business facilities.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            How do I schedule a service?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#requestCall">
+                                        <div class="accordion-body">
+                                            You can schedule a service through our website or by contacting our customer
+                                            service directly.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Are your technicians licensed and insured?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#requestCall">
+                                        <div class="accordion-body">
+                                            Yes, all our technicians are licensed, insured, and experienced
+                                            professionals.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="request_callback">
+                        <div class="contact_form">
+                            <form id="contact-form" class="contact-form mt-30" action="assets/contact.php" method="POST"
+                                onsubmit="handleSubmit(event)">
+                                <div class="row form_row">
+                                    <div class="col-md-12">
+                                        <div class="single_title text-center">
+                                            <h5>Request a call back</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row request_row text-lg-start">
+                                    <div class="col-lg-12">
+                                        <div class="contact-field p-relative c-name mb-15">
+                                            <input type="text" name="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contact-field p-relative c-subject mb-15">
+                                            <input type="email" name="email" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contact-field p-relative c-subject mb-15">
+                                            <input type="text" id="phone" name="phone" placeholder="Phone No.">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="contact-field p-relative c-message mb-30">
+                                            <textarea name="message" id="message" cols="30" rows="10"
+                                                placeholder="Write comments" required></textarea>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="access_key" value="0dfd4a3a-ef84-474c-94c5-6c2d051486c2">
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                    <p class="form-message"></p>
+                                    <div class="col-md-12">
+                                        <div class="single_form text-center mt-20">
+                                            <button type="submit" class="active btn main-btn-blue mouse-hover">Submit
+                                                Now<span></span><i
+                                                    class="flaticon-arrow-pointing-to-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="result"></div>
+                                <div id="success-message" style="display: none; text-align: center; margin-top: 20px;">
+                                    <i class="flaticon-check-mark" style="color: green; font-size: 24px;"></i> Message
+                                    sent successfully!
+                                </div>
+                            </form>
+
+                            <!-- Modal HTML -->
+                            <div class="modal" id="success-modal" style="display: none;">
+                                <div class="modal-content">
+                                    <h2>Success!</h2>
+                                    <p>Message sent successfully!</p>
+                                </div>
+                            </div>
+
+                        </div> <!-- contact form -->
+                    </div>
+                </div>
+
+
+
+            </div> <!-- row -->
+
+
+
+
+        </div> <!-- container -->
+    </section>
+
+    <!--====== REQUEST CALL BACK PART ENDS ======-->
+    <!--====== FOOTER PART START ======-->
+
+    <footer class="footer-area footer_style2">
+        <div class="footer-widget pt-30 pb-50"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-address pt-20"> <!-- Reduced padding top -->
+                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
+                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                                    <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
+                                </div>
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                </div>
+                            </div>
+                            
+                            <ul>
+                                <li>
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
+                                            consequat <br> dignissim finibus enim. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-address py-2 d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">55 Broklyn Street</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-placeholder"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">+352-807-5248</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">hello@gridtemplate.com</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                            </ul>
+                        </div> <!-- footer address -->
+                    </div>
+    
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
+                            <ul>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Home</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Services</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
+                            <div class="instagram_img pt-10"> <!-- Reduced padding top -->
+                                <ul>
+                                    <li class=""><a href=""><img src="assets/images/instagram/1.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/2.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/3.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=""><a href=""><img src="assets/images/instagram/4.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- footer Instagram Feeds -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
+    
+                            <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
+                                <p>Lorem ipsum dolor sit amet, consectetur <br>
+                                    adipiscing elit. Nulla , tempor </p>
+                            </div>
+    
+                            <div class="subscribe_email">
+                                <input type="email" name="email" class="form-control" placeholder="Your email...">
+                                <button class="btn main-btn mouse-hover" type="submit">Subscription
+                                    <span></span></button>
+                            </div>
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    
+        <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="copyright-section d-md-flex align-items-center justify-content-between">
+                    <div class="copyright text-center">
+                        <p class="pt-2 text">All copyrights reserved © 2024 - Designed & Developed by <a
+                                href="https://gridtemplate.com/">Fourise Software Solution PVT.LTD</a> </p>
+                    </div> <!-- copyright -->
+                    <div class="footer-bottom text-center pt-10"> <!-- Reduced padding top -->
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- payment -->
+                </div> <!-- copyright payment -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    <!--====== FOOTER PART ENDS ======-->
+
+
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="flaticon-up-arrow"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+        // preloader
+        $(window).on('load', function (event) {
+            $('.gridtemplate-loader').delay(500).fadeOut(500);
+
+        });
+        // counterUp
+        $('.counter').counterUp({
+            delay: 100,
+            time: 9000
+        });
+
+
+        const form = document.getElementById('contact-form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait...";
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = "Form submitted successfully";
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Simulate successful submission (You can replace this with actual submission logic)
+            setTimeout(() => {
+                document.getElementById('success-modal').style.display = 'flex'; // Show the modal
+                document.getElementById('success-message').style.display = 'block'; // Show success message
+
+                // Automatically hide the modal after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('success-modal').style.display = 'none'; // Hide the modal
+                }, 3000); // Change 3000 to the desired time in milliseconds
+            }, 1000); // Simulating a 1-second delay
+
+            // Clear the form fields
+            document.getElementById('contact-form').reset();
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

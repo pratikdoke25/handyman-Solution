@@ -1,0 +1,833 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap, Consulting Template, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="GridTemplate">
+
+    <!--====== Title ======-->
+    <title>Ganesh - Handy Solutions</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== icofont Icons css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!--====== Slick slider CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--====== animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu-logo {
+            display: flex;
+            align-items: flex-start;
+            /* Aligns the logo towards the top */
+            justify-content: center;
+            /* Center align the logo horizontally */
+        }
+
+        .menu-logo img {
+            margin-top: -40px;
+            /* Increase the negative value to shift the image slightly further up */
+            max-width: 135px;
+            /* Increase the width of the image */
+            height: 135px;
+            /* Increase the height of the image */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+        }
+
+        /* Intro-text-main */
+        .intro-clean {
+            margin-left: 30px;
+            /* Adjust the left margin */
+            margin-right: 30px;
+            /* Adjust the right margin */
+            padding: 30px;
+            text-align: center;
+
+        }
+
+        .intro-clean h1 {
+            color: #333;
+            /* Darker color for the heading */
+            font-size: 24px;
+            /* Heading font size */
+            margin-bottom: 10px;
+            /* Spacing below the heading */
+        }
+
+        .intro-clean p {
+            color: #555;
+            /* Lighter color for paragraph text */
+            line-height: 1.6;
+            /* Improve line spacing */
+            margin-bottom: 15px;
+            /* Spacing between paragraphs */
+        }
+
+        /* Reasons Section Styling */
+        .reasons-container {
+            display: flex;
+            align-items: flex-start;
+            /* Align items at the start */
+            gap: 20px;
+            /* Space between image and text */
+            flex-wrap: wrap;
+            /* Allows content to wrap on smaller screens */
+            padding: 20px;
+            /* Added padding for overall spacing */
+            margin-left: 70px;
+            margin-right: 50px;
+        }
+
+        .reasons img {
+            max-width: 50%;
+            /* Set the image to take half of the container */
+            height: 600px;
+            /* Maintain aspect ratio */
+            border-radius: 8px;
+            /* Smooth corners for image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+        }
+
+        .reasons-content {
+            flex: 1;
+            /* Allow it to grow */
+            max-width: 50%;
+            /* Ensure it takes half of the container */
+            padding: 0 20px;
+            /* Added horizontal padding for breathing space */
+        }
+
+        .reasons-content h1 {
+            margin-top: 0;
+            /* Remove top margin for a tighter layout */
+            font-size: 2.5em;
+            /* Increased font size for larger text */
+            color: #333;
+            /* Darker color for better readability */
+        }
+
+        .reasons-content p {
+            font-size: 1.2em;
+            /* Increased font size for paragraph */
+            line-height: 1.6;
+            /* Improved line height for readability */
+            margin: 15px 0;
+            /* Add space above and below */
+            color: #555;
+            /* Softer color for paragraph text */
+        }
+
+        .reasons-content ul {
+            list-style-type: circle;
+            /* Circle bullets for list */
+            margin-left: 20px;
+            /* Left margin for the list */
+            font-size: 1.2em;
+            /* Increased font size for list items */
+            color: #444;
+            /* Softer color for list items */
+        }
+
+        .reasons-content ul li {
+            margin-bottom: 10px;
+            /* Space between list items */
+            transition: color 0.3s ease;
+            /* Smooth color transition on hover */
+        }
+
+        .reasons-content ul li:hover {
+            color: #007bff;
+            /* Interactive hover effect */
+        }
+        .full-width-image {
+            width: 100%;
+            height: 800px;
+            /* Set a fixed height for the container */
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: 100%;
+            /* Set the height to match the container height */
+            object-fit: cover;
+            /* Ensures the image fills the container without distortion */
+            display: block;
+            /* Remove extra spacing below the image */
+        }
+
+        .container1 {
+            display: flex;
+            gap: 20px;
+            /* Adds space between the two sections */
+            align-items: stretch;
+            /* Ensures both containers stretch to the same height */
+            margin: 50px;
+        }
+
+        .left-container,
+        .right-container {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+            /* Ensures padding is included in the width and height */
+        }
+
+        .left-container {
+            width: 50%;
+            /* Adjusts the width of the left container */
+            height: 300px;
+            /* Set height to match the right container */
+        }
+
+        .right-container {
+            width: 50%;
+            /* Adjusts the width of the right container */
+            height: 300px;
+            /* Set height to match the left container */
+        }
+
+        .process,
+        .booking {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            /* Make sections fill the height of their container */
+        }
+
+        /* image cleaning person */
+        .image-with-clean {
+            display: flex;
+            align-items: flex-start;
+            /* Align items at the start */
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .image-class-person {
+            flex: 1;
+            /* Allow the image container to take available space */
+            max-width: 50%;
+            /* Set the max width to 50% of the parent container */
+        }
+
+        .image-class-person img {
+            width: 100%;
+            /* Make the image responsive */
+            height: 500px;
+            /* Set desired height */
+            object-fit: cover;
+            /* Maintain aspect ratio without distortion */
+        }
+
+        .jobs-we-specialize-in {
+            flex: 1;
+            /* Allow the text container to take equal space */
+            max-width: 50%;
+            /* Set the max width to 50% of the parent container */
+            padding-left: 50px;
+            /* Optional: Add space between image and text */
+        }
+
+        .jobs-we-specialize-in h2 {
+            margin-top: 0;
+            /* Remove top margin for a tighter layout */
+            font-size: 24px;
+            /* Increase font size for the heading */
+            font-weight: bold;
+            /* Make the heading bold */
+        }
+
+        .jobs-we-specialize-in ul {
+            list-style-type: disc;
+            /* Set the bullet to a black filled circle */
+            padding-left: 20px;
+            /* Add padding to align the bullets properly */
+            font-size: 18px;
+            /* Increase font size for the list items */
+            line-height: 1.6;
+            /* Add line height for better readability */
+            margin-top: 10px;
+            /* Add some space above the list */
+        }
+
+        .jobs-we-specialize-in ul li {
+            margin-bottom: 10px;
+            /* Add space between list items */
+        }
+
+
+        /* cleaning service */
+        .cleaning-service {
+            margin: 0 90px;
+            /* Add 90px margin on the left and right sides */
+        }
+
+        .cleaning-service h1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        /* Mobile View Styling */
+@media (max-width: 768px) {
+    /* General adjustments for mobile */
+    body {
+        padding: 10px;
+    }
+
+    /* Logo */
+    .menu-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-logo img {
+        margin-top: 0;
+        width: 100px;
+        height: auto;
+    }
+
+    /* Intro Section */
+    .intro-clean {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .intro-clean h1 {
+        font-size: 20px;
+    }
+
+    .intro-clean p {
+        font-size: 14px;
+    }
+
+    /* Reasons Section */
+    .reasons-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .reasons img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .reasons-content {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .reasons-content h1 {
+        font-size: 24px;
+    }
+
+    .reasons-content p {
+        font-size: 16px;
+    }
+
+    .reasons-content ul {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    /* Full-width Image */
+    .full-width-image {
+        height: 400px; /* Reduce height for smaller screens */
+    }
+
+    .full-width-image img {
+        height: 100%;
+    }
+
+    /* Container for Process and Booking Sections */
+    .container1 {
+        flex-direction: column;
+        margin: 20px 10px;
+        gap: 15px;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Process and Booking */
+    .process,
+    .booking {
+        padding: 15px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image with Cleaning Person */
+    .image-with-clean {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px;
+    }
+
+    .image-class-person {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-class-person img {
+        height: auto;
+    }
+
+    .jobs-we-specialize-in {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .jobs-we-specialize-in h2 {
+        font-size: 20px;
+    }
+
+    .jobs-we-specialize-in ul {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    /* Cleaning Service */
+    .cleaning-service {
+        margin: 0 10px;
+    }
+
+    .cleaning-service h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="gridtemplate-loader">
+        <div class="preloader">
+            <div class="spinner"></div>
+            <img class="preload-logo" src="assets/images/normal/favicon.svg">
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area header_style_2">
+
+        <div class="header-menu-area d-none d-lg-block">
+
+
+            <div class="toolbar-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-9 col-12">
+                            <div class="toolbar-contact">
+                                <p><i class="flaticon-email"></i><a href="mailto:info@example.com">info@example.com</a>
+                                </p>
+                                <p><i class="flaticon-phone-call"></i><a href="tel:+440-98-5298">Tel: +440-98-5298</a>
+                                </p>
+                                <p><i class="flaticon-placeholder"></i> 777 Road, Brooklyn New York</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="menu-logo">
+                                <a class="logo" href="index2.html">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 d-flex justify-content-center">
+                            <div class="navbar-menu">
+                                <ul class="">
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="cleaning.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                            <li><a href="painting.html">Painting</a></li>
+                                            <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                            <li><a href="services.html">Other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="why-choose-us.html">Why Choose Us</a>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+
+            </div>
+        </div> <!-- header menu area -->
+
+        <div class="header-mobile-menu d-lg-none">
+            <div class="container">
+                <div class="mobile-menu d-flex justify-content-between align-items-center">
+                    <div class="menu-bar">
+                        <a class="mobile-menu-open" href="javascript:void(0)"><i class="flaticon-menu"></i></a>
+                    </div>
+                    <div class="mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                        </a>
+                    </div> <!-- mobile logo -->
+
+                </div> <!-- mobile menu -->
+            </div> <!-- container -->
+        </div> <!-- header mobile menu -->
+
+    </header>
+
+    <!-- Main Section started -->
+
+    <main>
+        <div class="full-width-image">
+            <img src="./assets/images/Main/cleaning (4).png" alt="Full Width Image">
+        </div>
+
+        <section class="intro-clean">
+            <h1 style="text-align: center; font-weight: bold">A Clean Home is a Healthy Home</h1>
+            <p>A neat and clean house is a symbol of a healthy life. If you're not satisfied with your maid's cleaning
+                tasks, consult us. We provide world-class deep house cleaning services at affordable rates with flexible
+                times. Relax and let us handle the cleaning while you maintain hygiene and proper sanitization.</p>
+        </section>
+
+        <section class="reasons">
+            <div class="reasons-container">
+                <img src="./assets/images/Main/cleaining.png" alt="Cleaning Services">
+                <div class="reasons-content">
+                    <h1>Cleaning</h1>
+                    <p>Here's the updated text with "plumbing" replaced by "cleaning":
+
+                        "Cleaning
+                        Perhaps you've been clueless to the dusty shelves. Alternatively, it may be time to deep clean
+                        your old carpets. Whatever your cleaning issues are, Handyman Connection can help. Our
+                        professional cleaners can handle everything from dusting and vacuuming to cleaning windows and
+                        more. All our cleaning work is done by expert cleaners who will work with you to discover the
+                        best solution for your home. Call or request an estimate online today to find a cleaner near
+                        you."</p>
+                </div>
+            </div>
+        </section>
+        <div class="cleaning-service">
+            <h1>Cleaning Services</h1>
+            <p>Our craftspeople are available to accomplish any task or cleaning, as stated in our jobs list below if
+                you require Handyman Connection’s cleaning services. Whether an upgrade, replacement, cleaning, or
+                installation is required, our services are available to assist our valued customers. We can do any
+                project in the house, including bathrooms, kitchens, basements, utility closets, and more.</p>
+
+            <p>Our work includes dusting shelves, vacuuming carpets, and scrubbing surfaces, among other things.
+                Windows, floors, vents, and more will all be cleaned. We can not only deep clean but also organize and
+                sanitize bathrooms, kitchens, basements, utility closets, and more if you need them. No matter what the
+                cleaning issue is, our team will solve it.</p>
+
+            <p>A prompt cleaning can save you and your property from long-term buildup and damage. Don’t hesitate to
+                contact our team; Handyman Connection is available to assist you with any cleaning or organization
+                project. We’ll save you the time and aggravation that comes with dealing with dirty or cluttered spaces.
+                Your home will be spotless in no time with our cleaning services.</p>
+
+            <p>In addition to standard cleaning tasks, we offer specialized services such as deep cleaning carpets,
+                upholstery, and drapes. Our team is trained to handle delicate items and ensure they are treated with
+                care. We also provide post-construction cleaning and move-in/move-out services to help you settle into a
+                new space or prepare your home for sale. Whatever your cleaning needs may be, we are here to provide
+                exceptional service tailored to you.</p>
+        </div>
+        <section class="image-with-clean">
+            <div class="image-class-person">
+                <img src="./assets/images/Main/cleaning-service.jpeg" alt="Cleaning Service">
+            </div>
+            <div class="jobs-we-specialize-in">
+                <h2>Jobs We Specialize In</h2>
+                <ul>
+                    <li>Dusting shelves and surfaces</li>
+                    <li>Vacuuming carpets and rugs</li>
+                    <li>Scrubbing and sanitizing bathrooms and kitchens</li>
+                    <li>Floor cleaning and mopping</li>
+                    <li>Window cleaning (inside and outside)</li>
+                    <li>Cleaning vents and air ducts</li>
+                    <li>Deep cleaning and organizing basements</li>
+                    <li>Cleaning utility closets and storage areas</li>
+                    <li>Kitchen appliance cleaning</li>
+                    <li>Bathroom sanitation and cleaning</li>
+                    <li>Organizing and decluttering spaces</li>
+                    <li>Deep cleaning tubs, showers, and vanities</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Main Section endeed -->
+
+    <footer class="footer-area footer_style2">
+        <div class="footer-widget pt-30 pb-50"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-address pt-20"> <!-- Reduced padding top -->
+                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
+                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                                    <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
+                                </div>
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                </div>
+                            </div>
+                            
+                            <ul>
+                                <li>
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
+                                            consequat <br> dignissim finibus enim. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-address py-2 d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">55 Broklyn Street</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-placeholder"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">+352-807-5248</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">hello@gridtemplate.com</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                            </ul>
+                        </div> <!-- footer address -->
+                    </div>
+    
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
+                            <ul>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Home</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Services</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
+                            <div class="instagram_img pt-10"> <!-- Reduced padding top -->
+                                <ul>
+                                    <li class=""><a href=""><img src="assets/images/instagram/1.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/2.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/3.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=""><a href=""><img src="assets/images/instagram/4.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- footer Instagram Feeds -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
+    
+                            <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
+                                <p>Lorem ipsum dolor sit amet, consectetur <br>
+                                    adipiscing elit. Nulla , tempor </p>
+                            </div>
+    
+                            <div class="subscribe_email">
+                                <input type="email" name="email" class="form-control" placeholder="Your email...">
+                                <button class="btn main-btn mouse-hover" type="submit">Subscription
+                                    <span></span></button>
+                            </div>
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    
+        <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="copyright-section d-md-flex align-items-center justify-content-between">
+                    <div class="copyright text-center">
+                        <p class="pt-2 text">All copyrights reserved © 2024 - Designed & Developed by <a
+                                href="https://gridtemplate.com/">Fourise Software Solution PVT.LTD</a> </p>
+                    </div> <!-- copyright -->
+                    <div class="footer-bottom text-center pt-10"> <!-- Reduced padding top -->
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- payment -->
+                </div> <!-- copyright payment -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top back-blue"><i class="flaticon-up-arrow"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+
+        // preloader
+        $(window).on('load', function (event) {
+            $('.gridtemplate-loader').delay(500).fadeOut(500);
+
+        });
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        // Function to move the carousel to the current image
+        function updateCarousel() {
+            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        // Event listeners for buttons
+        nextBtn.addEventListener('click', () => {
+            if (counter >= images.length - 1) counter = -1;
+            counter++;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (counter <= 0) counter = images.length;
+            counter--;
+            updateCarousel();
+        });
+
+        // Optional: Auto-slide the carousel every 3 seconds
+        setInterval(() => {
+            if (counter >= images.length - 1) counter = -1;
+            counter++;
+            updateCarousel();
+        }, 3000);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,671 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap, Consulting Template, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="GridTemplate">
+
+    <!--====== Title ======-->
+    <title>Contact - Handyman Services</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== icofont Icons css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!--====== animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu-logo {
+            display: flex;
+            align-items: flex-start;
+            /* Aligns the logo towards the top */
+            justify-content: center;
+            /* Center align the logo horizontally */
+        }
+
+        .menu-logo img {
+            margin-top: -40px;
+            /* Increase the negative value to shift the image slightly further up */
+            max-width: 135px;
+            /* Increase the width of the image */
+            height: 135px;
+            /* Increase the height of the image */
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 10px 20px;
+            /* Button padding */
+            background-color: #25D366;
+            /* WhatsApp green color */
+            color: #fff;
+            /* White text color */
+            border: none;
+            /* No border */
+            border-radius: 5px;
+            /* Rounded corners */
+            text-decoration: none;
+            /* Remove underline */
+            font-weight: bold;
+            /* Bold text */
+            margin-top: 10px;
+            /* Space above the button */
+            transition: background-color 0.3s;
+            margin-bottom: 50px;
+            /* Smooth transition */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            /* Darker green on hover */
+        }
+
+        /* Modal styles */
+        .modal {
+            position: fixed;
+            top: 50%;
+            /* Center vertically */
+            left: 50%;
+            /* Center horizontally */
+            transform: translate(-50%, -50%);
+            /* Offset by half the width and height */
+            width: 300px;
+            /* Adjust width to your preference */
+            height: auto;
+            /* Adjust height based on content */
+            background-color: rgba(30, 222, 23, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            /* Add padding for spacing */
+            border-radius: 5px;
+            /* Rounded corners */
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add shadow for depth */
+        }
+
+        h2 {
+            margin: 0;
+            /* Remove default margin */
+            font-size: 20px;
+            /* Font size for the title */
+        }
+
+        p {
+            margin: 10px 0 0;
+            /* Spacing for the message */
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="gridtemplate-loader">
+        <div class="preloader">
+            <div class="spinner"></div>
+            <img class="preload-logo" src="assets/images/normal/favicon.svg">
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area header_style_2">
+
+        <div class="header-menu-area d-none d-lg-block">
+            <div class="toolbar-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-9 col-12">
+                            <div class="toolbar-contact">
+                                <p><i class="flaticon-email"></i><a href="mailto:info@example.com">info@example.com</a>
+                                </p>
+                                <p><i class="flaticon-phone-call"></i><a href="tel:+440-98-5298">Tel: +440-98-5298</a>
+                                </p>
+                                <p><i class="flaticon-placeholder"></i> 777 Road, Brooklyn New York</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="header-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="menu-logo">
+                                <a class="logo" href="index2.html">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 d-flex justify-content-center">
+                            <div class="navbar-menu">
+                                <ul class="">
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="cleaning.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                            <li><a href="painting.html">Painting</a></li>
+                                            <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                            <li><a href="services.html">Other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="why-choose-us.html">Why Choose Us</a>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+
+        </div>
+        </div> <!-- header menu area -->
+
+        <div class="header-mobile-menu d-lg-none">
+            <div class="container">
+                <div class="mobile-menu d-flex justify-content-between align-items-center">
+                    <div class="menu-bar">
+                        <a class="mobile-menu-open" href="javascript:void(0)"><i class="flaticon-menu"></i></a>
+                    </div>
+                    <div class="mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                        </a>
+                    </div> <!-- mobile logo -->
+
+                </div> <!-- mobile menu -->
+            </div> <!-- container -->
+        </div> <!-- header mobile menu -->
+
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== BREADCRUMB PART START ======-->
+    <section class="breadcrumbs_section">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="breadcrumbs-content left">
+                            <h1 class="page-title">Contact Us</h1>
+                            <p>Business plan draws on a wide range of knowledge from different business disciplines.
+                                Business draws on a wide range of different business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== OFFCANVAS MOBILE MENU PART START ======-->
+
+    <div class="offcanvas-menu-wrapper mobile-menu-style2">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
+
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index1.html">Home 01</a></li>
+                                <li><a href="index2.html">Home 02</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="services.html">Cleaning Services</a></li>
+                                <li><a href="services.html">Drywall</a></li>
+                                <li><a href="services.html">Painting</a></li>
+                                <li><a href="services.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="services.html">Maintenance</a></li>
+                                <li><a href="services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)">Safety and Mobility</a>
+                        <li><a href="contact.html">Contact</a></li>
+                        </li>
+                        <li><a href="javascript:void(0)"> About Us</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <!--====== OFFCANVAS MOBILE MENU PART START ======-->
+    <!--====== CONTACT PAGE PART START ======-->
+
+    <section class="contact-info pt-120 pb-90 fix">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="contact-box text-center">
+                        <div class="contact-icon">
+                            <i class="flaticon-email py-2"></i>
+                        </div>
+                        <div class="contact-content2">
+                            <h5>Email Address</h5>
+                            <p>hello@gridtemplate.com<br /> hello@gridtemplate.com</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="contact-box text-center">
+                        <div class="contact-icon">
+                            <i class="flaticon-phone-call py-2"></i>
+                        </div>
+                        <div class="contact-content2">
+                            <h5>Phone Number</h5>
+                            <p>090-098-765-09 <br />093-456-432-654-7</p>
+                        </div>
+                        <a href="https://wa.me/9527605805?text=Hello%20I%20need%20assistance%20with%20your%20services."
+                            class="whatsapp-button">Contact on WhatsApp</a>
+
+                        <!-- WhatsApp button -->
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="contact-box text-center">
+                        <div class="contact-icon">
+                            <i class="flaticon-placeholder py-2"></i>
+                        </div>
+                        <div class="contact-content2">
+                            <h5>Office Address</h5>
+                            <p>12/A, Dagenham
+                                ,<br>United Kingdom</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-area pt-130 pb-130 p-relative fix">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212867.83634504632!2d-112.24455686962897!3d33.52582710700138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b743829374b03%3A0xabaac255b1e43fbe!2sPlexus%20Worldwide!5e0!3m2!1sen!2sin!4v1618567685329!5m2!1sen!2sin"
+                        width="100%" height="615" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-bg02">
+                        <div class="section-title center-align">
+
+                            <h2>
+                                Request a call back.
+                            </h2>
+
+                        </div>
+
+                        <form id="contact-form" class="contact-form mt-30" method="POST" onsubmit="handleSubmit(event)">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="contact-field p-relative c-name mb-15">
+                                        <input type="text" name="name" placeholder="First Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="contact-field p-relative c-subject mb-15">
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contact-field p-relative c-subject mb-15">
+                                        <input type="text" id="phone" name="phone" placeholder="Phone No.">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contact-field p-relative c-message mb-30">
+                                        <textarea name="message" id="message" cols="30" rows="10"
+                                            placeholder="Write comments" required></textarea>
+                                    </div>
+                                    <input type="hidden" name="access_key" value="0dfd4a3a-ef84-474c-94c5-6c2d051486c2">
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                    <p class="form-message"></p>
+                                    <div class="slider-btn">
+                                        <button type="submit" class="active btn main-btn-blue mouse-hover"><span></span>
+                                            Submit Now</button>
+                                    </div>
+                                    <div id="result"></div>
+                                    <div id="success-message"
+                                        style="display: none; text-align: center; margin-top: 20px;">
+                                        <i class="flaticon-check-mark" style="color: green; font-size: 24px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Modal HTML -->
+                        <div class="modal" id="success-modal" style="display: none;">
+                            <div class="modal-content">
+                                <h2>Success!</h2>
+                                <p>Message sent successfully!</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <script>
+                            const form = document.getElementById('contact-form');
+                            const result = document.getElementById('result');
+
+                            form.addEventListener('submit', function (e) {
+                                e.preventDefault();
+                                const formData = new FormData(form);
+                                const object = Object.fromEntries(formData);
+                                const json = JSON.stringify(object);
+                                // result.innerHTML = "Please wait...";
+                                console.log("Please wait...");
+
+                                fetch('https://api.web3forms.com/submit', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        'Accept': 'application/json'
+                                    },
+                                    body: json
+                                })
+                                    .then(async (response) => {
+                                        let json = await response.json();
+                                        if (response.status == 200) {
+                                            // result.innerHTML = "Form submitted successfully";
+                                            console.log("Form submitted successfully");
+                                        } else {
+                                            console.log(response);
+                                            result.innerHTML = json.message;
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.log(error);
+                                        // result.innerHTML = "Something went wrong!";
+                                        console.log("Something went wrong!");
+                                    })
+                                    .then(function () {
+                                        form.reset();
+                                        setTimeout(() => {
+                                            result.style.display = "none";
+                                        }, 3000);
+                                    });
+                            });
+                            function handleSubmit(event) {
+                                event.preventDefault(); // Prevent the default form submission
+
+                                // Simulate successful submission (You can replace this with actual submission logic)
+                                setTimeout(() => {
+                                    document.getElementById('success-modal').style.display = 'flex'; // Show the modal
+                                    document.getElementById('success-message').style.display = 'block'; // Show success message
+
+                                    // Automatically hide the modal after 3 seconds
+                                    setTimeout(() => {
+                                        document.getElementById('success-modal').style.display = 'none'; // Hide the modal
+                                    }, 3000); // Change 3000 to the desired time in milliseconds
+                                }, 1000); // Simulating a 1-second delay
+
+                                // Clear the form fields
+                                document.getElementById('contact-form').reset();
+                            }
+
+
+
+                        </script>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--====== CONTACT PAGE PART ENDS ======-->
+
+
+
+
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer class="footer-area footer_style2">
+        <div class="footer-widget pt-30 pb-50"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-address pt-20"> <!-- Reduced padding top -->
+                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
+                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                                    <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
+                                </div>
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                </div>
+                            </div>
+                            
+                            <ul>
+                                <li>
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
+                                            consequat <br> dignissim finibus enim. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-address py-2 d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">55 Broklyn Street</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-placeholder"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">+352-807-5248</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">hello@gridtemplate.com</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                            </ul>
+                        </div> <!-- footer address -->
+                    </div>
+    
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
+                            <ul>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Home</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Services</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
+                            <div class="instagram_img pt-10"> <!-- Reduced padding top -->
+                                <ul>
+                                    <li class=""><a href=""><img src="assets/images/instagram/1.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/2.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/3.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=""><a href=""><img src="assets/images/instagram/4.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- footer Instagram Feeds -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
+    
+                            <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
+                                <p>Lorem ipsum dolor sit amet, consectetur <br>
+                                    adipiscing elit. Nulla , tempor </p>
+                            </div>
+    
+                            <div class="subscribe_email">
+                                <input type="email" name="email" class="form-control" placeholder="Your email...">
+                                <button class="btn main-btn mouse-hover" type="submit">Subscription
+                                    <span></span></button>
+                            </div>
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    
+        <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="copyright-section d-md-flex align-items-center justify-content-between">
+                    <div class="copyright text-center">
+                        <p class="pt-2 text">All copyrights reserved © 2024 - Designed & Developed by <a
+                                href="https://gridtemplate.com/">Fourise Software Solution PVT.LTD</a> </p>
+                    </div> <!-- copyright -->
+                    <div class="footer-bottom text-center pt-10"> <!-- Reduced padding top -->
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- payment -->
+                </div> <!-- copyright payment -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top back-blue"><i class="flaticon-up-arrow"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+
+        // preloader
+        $(window).on('load', function (event) {
+            $('.gridtemplate-loader').delay(500).fadeOut(500);
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

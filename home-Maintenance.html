@@ -1,0 +1,677 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap, Consulting Template, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="GridTemplate">
+
+    <!--====== Title ======-->
+    <title>Ganesh - Handy Solutions</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== icofont Icons css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!--====== Slick slider CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--====== animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu-logo {
+            display: flex;
+            align-items: flex-start;
+            /* Aligns the logo towards the top */
+            justify-content: center;
+            /* Center align the logo horizontally */
+        }
+
+        .menu-logo img {
+            margin-top: -40px;
+            /* Increase the negative value to shift the image slightly further up */
+            max-width: 135px;
+            /* Increase the width of the image */
+            height: 135px;
+            /* Increase the height of the image */
+        }
+
+        .menu-logo div {
+            margin-top: 5px;
+            /* Adds some space between the image and text */
+            font-size: 16px;
+            /* Adjust text size as needed */
+            margin-left: 70px;
+            margin-top: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .full-width-image {
+            position: relative;
+            display: inline-block;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 2rem;
+            /* Adjust as needed */
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Optional: adds a background for better contrast */
+            padding: 10px;
+            /* Optional: add padding for better visibility */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .reasons-container {
+                flex-direction: column;
+                /* Stack items vertically */
+                align-items: flex-start;
+            }
+
+        }
+
+        /* Image with man and text */
+        .reasons-container {
+            display: flex;
+            align-items: center;
+            /* Vertically center the content */
+            gap: 20px;
+            /* Add space between the image and text */
+            margin-left: 40px;
+            /* Add left margin */
+            margin-right: 40px;
+            /* Add right margin */
+            margin-top: 30px;
+        }
+
+        .reasons-image {
+            flex: 1;
+            /* Make the image container take up half the space */
+        }
+
+        .reasons-image img {
+            width: 100%;
+            /* Make the image take full width of its container */
+            height: 500px;
+            /* Increase the height as needed */
+            object-fit: cover;
+            border-radius: 5px;
+            /* Optional: add border-radius to make the image look nicer */
+        }
+
+        .reasons-content {
+            flex: 1;
+            /* Make the content container take up half the space */
+        }
+
+        .reasons-content h1 {
+            font-size: 2.5rem;
+            /* Increase the font size of the heading */
+            line-height: 1.2;
+            /* Adjust line height for readability */
+            margin-bottom: 20px;
+            /* Add space between the heading and paragraph */
+        }
+
+        .reasons-content p {
+            font-size: 1.25rem;
+            /* Increase the font size of the paragraph */
+            line-height: 1.6;
+            /* Adjust line height for readability */
+        }
+
+        @media (max-width: 768px) {
+            .reasons-container {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 40px;
+                /* Adjust margin for smaller screens */
+                margin-right: 40px;
+                /* Adjust margin for smaller screens */
+            }
+
+            .reasons-image img {
+                width: 100%;
+                /* Make the image take full width on small screens */
+                height: auto;
+                /* Maintain aspect ratio */
+            }
+
+            .reasons-content h1 {
+                font-size: 2rem;
+                /* Adjust the heading size for smaller screens */
+            }
+
+            .reasons-content p {
+                font-size: 1.1rem;
+                /* Adjust the paragraph size for smaller screens */
+            }
+        }
+
+        /* container-main-hoem */
+        .conatiner-main-heom {
+            margin-left: 50px;
+            /* Add left margin */
+            margin-right: 50px;
+            /* Add right margin */
+        }
+
+        .conatiner-main-heom h1 {
+            font-size: 2.5rem;
+            /* Decrease the font size of the heading */
+            line-height: 1.1;
+            /* Adjust line height for readability */
+            text-align: center;
+            /* Center align the heading */
+            margin-top: 30px;
+        }
+
+        .conatiner-main-heom p {
+            font-size: 1.25rem;
+            /* Decrease the font size of the paragraph */
+            font-weight: normal;
+            /* Change the paragraph text to normal weight */
+            line-height: 1.5;
+            /* Adjust line height for better readability */
+            margin-top: 20px;
+            /* Add gap between the h1 and the paragraph */
+        }
+
+
+        /* sub-main-section */
+        .sub-main-section {
+            display: flex;
+            /* Use flexbox for layout */
+            align-items: flex-start;
+            /* Align items at the top */
+            gap: 20px;
+            /* Add space between the image and text */
+            margin: 40px;
+            /* Add margin around the section */
+        }
+
+        .image-container img {
+            width: 100%;
+            /* Make the image responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+            max-width: 400px;
+            /* Set a maximum width for the image */
+            border-radius: 5px;
+            /* Optional: add border-radius to the image */
+        }
+
+        .services-description {
+            flex: 1;
+            /* Allow the text container to take remaining space */
+        }
+
+        .services-list {
+            list-style-type: disc;
+            /* Use black circle bullet points */
+            padding-left: 20px;
+            /* Add padding to align bullets properly */
+        }
+
+        /* Mobile View Adjustments */
+        @media (max-width: 768px) {
+            .sub-main-section {
+                flex-direction: column;
+                /* Stack items vertically */
+                align-items: center;
+                /* Center align the content */
+                margin: 20px;
+                /* Reduce margin for better fit */
+            }
+
+            .image-container {
+                width: 100%;
+                /* Make image container full width */
+                max-width: 400px;
+                /* Optional: limit the max width for larger screens */
+                margin-bottom: 20px;
+                /* Add space below the image */
+            }
+
+            .image-container img {
+                width: 100%;
+                /* Make the image responsive */
+                height: auto;
+                /* Maintain aspect ratio */
+                border-radius: 5px;
+                /* Optional: add border-radius */
+            }
+
+            .services-description {
+                text-align: center;
+                /* Center-align the text */
+                padding: 0 15px;
+                /* Add horizontal padding */
+            }
+
+            .services-list {
+                list-style-type: disc;
+                /* Use bullet points */
+                padding-left: 20px;
+                /* Align bullets properly */
+                text-align: left;
+                /* Align list items to the left */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="gridtemplate-loader">
+        <div class="preloader">
+            <div class="spinner"></div>
+            <img class="preload-logo" src="assets/images/Main/logo/ganesha-logo2.png">
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area header_style_2">
+
+        <div class="header-menu-area d-none d-lg-block">
+
+
+            <div class="toolbar-area">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-lg-8 col-md-9 col-12">
+                            <div class="toolbar-contact">
+                                <p><i class="flaticon-email"></i><a href="mailto:info@example.com">info@example.com</a>
+                                </p>
+                                <p><i class="flaticon-phone-call"></i><a href="tel:+440-98-5298">Tel: +440-98-5298</a>
+                                </p>
+                                <p><i class="flaticon-placeholder"></i> 777 Road, Brooklyn New York</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="menu-logo">
+                                <a class="logo" href="index2.html">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
+                                    <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 d-flex justify-content-center">
+                            <div class="navbar-menu">
+                                <ul class="">
+                                    <li>
+                                        <a href="index2.html">Home <i class="flaticon-add-1"></i></a>
+                                    </li>
+
+                                    <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="services.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall1.html">Drywall</a></li>
+                                            <li><a href="Paiting.html">Painting</a></li>
+                                            <li><a href="Rustic_Pergolas1.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="Home-maintainces.html">Maintenance</a></li>
+                                            <li><a href="services.html">Other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="why-choose2.html">Why Choose Us</a>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+
+            </div>
+        </div> <!-- header menu area -->
+
+        <div class="header-mobile-menu d-lg-none">
+            <div class="container">
+                <div class="mobile-menu d-flex justify-content-between align-items-center">
+                    <div class="menu-bar">
+                        <a class="mobile-menu-open" href="javascript:void(0)"><i class="flaticon-menu"></i></a>
+                    </div>
+                    <div class="mobile-logo">
+                        <a href="index.html">
+                            <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
+                        </a>
+                    </div> <!-- mobile logo -->
+                </div> <!-- mobile menu -->
+            </div> <!-- container -->
+        </div>
+        <!-- header mobile menu -->
+
+    </header>
+
+    <!-- Main Section started -->
+
+    <main>
+        <div class="full-width-image">
+            <img src="./assets/images/Main/Home.png" alt="Full Width Image">
+            <div class="image-text">
+                <h1>Home Maintenance & Installations</h1>
+            </div>
+        </div>
+        <section class="reasons">
+            <div class="reasons-container">
+                <div class="reasons-image">
+                    <img src="./assets/images/Main/Home/Home.jpg" alt="Cleaning Services">
+                </div>
+                <div class="reasons-content">
+                    <h1>Maintenance & Installations</h1>
+                    <p>
+                        Handyman Connection can provide dependable general handyman services for all of your home's
+                        needs when it comes to home improvement and maintenance. We are the trusted source homeowners
+                        call when they need a professional handyman, whether they need help cleaning the gutters,
+                        installing curtains, or simply can't reach the smoke detectors to change the batteries. There's
+                        no need to call around to find what you're looking for when a single call will suffice. Our work
+                        is performed by background-checked, experienced professionals who are here to deliver the
+                        high-quality home improvement services your house deserves. To get in touch with our trustworthy
+                        team, call or request an estimate today.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="conatiner-main-heom">
+            <h1>Home Maintenance Services</h1>
+            <div>
+                <p>
+                    Inside the home, we can install weather stripping, caulk, hang flat-screen TVs, pictures, and
+                    mirrors, among other things. We will install blinds and window coverings, as well as change the
+                    batteries in hard-to-reach smoke and carbon monoxide detectors. Our home maintenance services are
+                    here to save you the trouble of dealing with these various projects. We also provide window repair
+                    and cleaning for first-floor windows. We can clean your gutters and, if it’s close to the holidays,
+                    hang your Christmas lights and other holiday decorations.
+                    <br>
+                    When repairing, installing, or correcting anything inside your home, our home repair services will
+                    provide assistance and efficient work. We handle everything from hanging pictures and mirrors to
+                    installing cabinet hardware and deadbolts and doorknobs. These streamlined projects will be
+                    completed quickly so that you and your family can enjoy your home.
+                </p>
+            </div>
+        </div>
+        <section class="sub-main-section">
+            <div class="image-container">
+                <img src="./assets/images/Main/Home/MV_0604_0723.webp" alt="">
+            </div>
+            <div class="services-description">
+                <p>
+                    Our craftsmen strive to provide our customers with the highest quality of home maintenance services
+                    available.
+                    That’s why we offer a large number of projects and options in our catalog for our customers to
+                    request and choose from.
+                    From big to small home improvement services, we are here for you.
+                </p>
+                <ul class="services-list">
+                    <li>Window repairs</li>
+                    <li>Wash first-story windows</li>
+                    <li>Gutter cleaning</li>
+                    <li>Install weather stripping</li>
+                    <li>Caulking</li>
+                    <li>Installation or replacement of cabinet hardware</li>
+                    <li>Hang flat-screen TVs</li>
+                    <li>Install interior and/or exterior doors</li>
+                    <li>Hang pictures and mirrors</li>
+                    <li>Install blinds and window coverings</li>
+                    <li>Replace or Install doorknobs, deadbolts, and door hardware</li>
+                    <li>Change batteries in smoke and carbon monoxide detectors</li>
+                    <li>Hang Christmas lights and other holiday decorations</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Main Section endeed -->
+
+    <footer class="footer-area footer_style2">
+        <div class="footer-widget pt-30 pb-50"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-address pt-20"> <!-- Reduced padding top -->
+                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
+                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                                    <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
+                                </div>
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                </div>
+                            </div>
+                            
+                            <ul>
+                                <li>
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
+                                            consequat <br> dignissim finibus enim. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-address py-2 d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">55 Broklyn Street</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-placeholder"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">+352-807-5248</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                                <li>
+                                    <div class="single-address d-flex">
+                                        <div class="address-icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="address-content media-body">
+                                            <p class="text">hello@gridtemplate.com</p>
+                                        </div>
+                                    </div> <!-- single address -->
+                                </li>
+                            </ul>
+                        </div> <!-- footer address -->
+                    </div>
+    
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
+                            <ul>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Home</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Services</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="#"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
+                            <div class="instagram_img pt-10"> <!-- Reduced padding top -->
+                                <ul>
+                                    <li class=""><a href=""><img src="assets/images/instagram/1.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/2.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=" "><a href=""><img src="assets/images/instagram/3.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                    <li class=""><a href=""><img src="assets/images/instagram/4.png"
+                                                class="img-fluid"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- footer Instagram Feeds -->
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-link pt-20"> <!-- Reduced padding top -->
+                            <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
+    
+                            <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
+                                <p>Lorem ipsum dolor sit amet, consectetur <br>
+                                    adipiscing elit. Nulla , tempor </p>
+                            </div>
+    
+                            <div class="subscribe_email">
+                                <input type="email" name="email" class="form-control" placeholder="Your email...">
+                                <button class="btn main-btn mouse-hover" type="submit">Subscription
+                                    <span></span></button>
+                            </div>
+                        </div> <!-- footer link -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    
+        <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
+            <div class="container">
+                <div class="copyright-section d-md-flex align-items-center justify-content-between">
+                    <div class="copyright text-center">
+                        <p class="pt-2 text">All copyrights reserved © 2024 - Designed & Developed by <a
+                                href="https://gridtemplate.com/">Fourise Software Solution PVT.LTD</a> </p>
+                    </div> <!-- copyright -->
+                    <div class="footer-bottom text-center pt-10"> <!-- Reduced padding top -->
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-facebook-circular-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#"><i class="flaticon-pinterest-social-logo"></i></a></li>
+                                <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- payment -->
+                </div> <!-- copyright payment -->
+            </div> <!-- container -->
+        </div> <!-- footer copyright -->
+    </footer>
+    
+
+    <!--====== FOOTER PART ENDS ======-->
+
+
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top back-blue"><i class="flaticon-up-arrow"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== wow.min js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+
+        // preloader
+        $(window).on('load', function (event) {
+            $('.gridtemplate-loader').delay(500).fadeOut(500);
+
+        });
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        // Function to move the carousel to the current image
+        function updateCarousel() {
+            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        // Event listeners for buttons
+        nextBtn.addEventListener('click', () => {
+            if (counter >= images.length - 1) counter = -1;
+            counter++;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (counter <= 0) counter = images.length;
+            counter--;
+            updateCarousel();
+        });
+
+        // Optional: Auto-slide the carousel every 3 seconds
+        setInterval(() => {
+            if (counter >= images.length - 1) counter = -1;
+            counter++;
+            updateCarousel();
+        }, 3000);
+
+    </script>
+
+</body>
+
+</html>
