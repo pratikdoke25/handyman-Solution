@@ -234,6 +234,26 @@
                 transform: none;
             }
         }
+        .image-text-container1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.reduced-height-image {
+   
+    transition: transform 0.5s ease; /* Smooth zoom-in transition */
+}
+
+.image-wrapper1:hover .reduced-height-image {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+
     </style>
 <body>
 
@@ -340,13 +360,46 @@
         </div> <!-- header mobile menu -->
 
     </header>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
+
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="/home-page.html">Home</a>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="cleaning.html">Cleaning Services</a></li>
+                                <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                <li><a href="painting.html">Painting</a></li>
+                                <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                <li><a href="services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Why Choose Us</a>
+                        </li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
     <!-- Header End -->
     <div class="image-text-container1">
         <div class="image-wrapper1">
             <img src="./assets/images/Main/painting/Brown wood.png" alt="Painting Services" class="reduced-height-image">
-            <div class="overlay-text1">Painting Services</div> <!-- Overlay text -->
+            <div class="overlay-text1">Painting Services</div>
         </div>
     </div>
+    
     
     <div class="container1">
         <div class="intro">

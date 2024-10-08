@@ -504,6 +504,32 @@
                 /* Smaller paragraph size */
             }
         }
+
+        /* Zoom in effect to image */
+        .image-container img {
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            /* Smooth zoom transition */
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+            /* Zoom-in effect */
+        }
+
+        img {
+            width: 100%;
+            /* Makes the image responsive */
+            height: auto;
+            /* Maintains the aspect ratio */
+            transition: transform 0.3s ease;
+            /* Smooth transition for the transform */
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            /* Scale up the image on hover */
+        }
     </style>
 
 </head>
@@ -611,7 +637,38 @@
                 </div> <!-- mobile menu -->
             </div> <!-- container -->
         </div> <!-- header mobile menu -->
-
+        <div class="offcanvas-menu-wrapper">
+            <div class="offcanvas-menu">
+                <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
+    
+                <div class="mobile-menu pt-30">
+                    <nav>
+                        <ul>
+    
+                            <li class="menu-item-has-children"><a class="active" href="/home-page.html">Home</a>
+                            </li>
+    
+    
+                            <li class="menu-item-has-children"><a href="#">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="cleaning.html">Cleaning Services</a></li>
+                                    <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                    <li><a href="painting.html">Painting</a></li>
+                                    <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                    <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                    <li><a href="services.html">Other services</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="#">Why Choose Us</a>
+                            </li>
+    
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
     </header>
     <div class="image-container">
         <img src="./assets/images/Main/dry-wall.jpg" alt="Drywall Repair">
@@ -705,18 +762,24 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer-address pt-20"> <!-- Reduced padding top -->
-                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
-                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                            <div class="footer-logo" style="display: flex; align-items: center; ">
+                                <!-- Flex container for logo and text -->
+                                <div class="img-fluid"
+                                    style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;">
+                                    <!-- Set margin to 0 for alignment -->
                                     <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
                                 </div>
-                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
-                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;">
+                                    <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">
+                                        Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
                                 </div>
                             </div>
-                            
+
                             <ul>
                                 <li>
-                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;">
+                                        <!-- Reduced padding top, bottom, and left -->
                                         <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
                                             consequat <br> dignissim finibus enim. </p>
                                     </div>
@@ -754,7 +817,7 @@
                             </ul>
                         </div> <!-- footer address -->
                     </div>
-    
+
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
@@ -766,7 +829,7 @@
                             </ul>
                         </div> <!-- footer link -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
@@ -784,16 +847,16 @@
                             </div>
                         </div> <!-- footer Instagram Feeds -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
-    
+
                             <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
                                 <p>Lorem ipsum dolor sit amet, consectetur <br>
                                     adipiscing elit. Nulla , tempor </p>
                             </div>
-    
+
                             <div class="subscribe_email">
                                 <input type="email" name="email" class="form-control" placeholder="Your email...">
                                 <button class="btn main-btn mouse-hover" type="submit">Subscription
@@ -804,7 +867,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
-    
+
         <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
             <div class="container">
                 <div class="copyright-section d-md-flex align-items-center justify-content-between">

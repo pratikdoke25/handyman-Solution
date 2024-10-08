@@ -10,9 +10,9 @@
 
     <!--====== Title ======-->
     <title>Ganesh - Handy Solutions</title>
-
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/normal/favicon.svg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -141,7 +141,7 @@
         /* Unordered List Styling */
         ul {
             list-style-type: disc;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
         }
 
         /* Promise Section Styling */
@@ -192,6 +192,7 @@
         /* checkbox css */
         .core-values-section {
             text-align: center;
+            margin-top: 20px;
             /* padding: 60px 30px; Slightly increased padding for better spacing */
         }
 
@@ -237,22 +238,6 @@
             line-height: 1.4;
             /* Added line-height for improved text spacing */
         }
-
-        .carousel-image {
-            height: 800px;
-            /* Set the desired height */
-            width: 100%;
-            /* Maintain aspect ratio */
-            object-fit: cover;
-            /* Ensures the image covers the entire area */
-        }
-
-        .carousel {
-            height: 800px;
-            /* Match this to the height of your images */
-        }
-
-        /* Responsive Design Adjustments */
 
         /* Media Queries for screens smaller than 768px */
         @media (max-width: 768px) {
@@ -403,6 +388,33 @@
                 padding-left: 20px;
             }
         }
+        .full-width-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-banner:hover img {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Optional: Styling for the text over the image */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
     </style>
 
 </head>
@@ -508,12 +520,45 @@
             </div> <!-- container -->
         </div> <!-- header mobile menu -->
     </header>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
+
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="/home-page.html">Home</a>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="cleaning.html">Cleaning Services</a></li>
+                                <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                <li><a href="painting.html">Painting</a></li>
+                                <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                <li><a href="services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Why Choose Us</a>
+                        </li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
     <div class="full-width-image-container">
         <div class="image-banner">
             <img src="./assets/images/Main/why-chose-us.webp" alt="Why Choose Us">
             <h1 class="image-text">Why Choose Us</h1>
         </div>
     </div>
+    
     <section class="content">
         <h3 class="quote">Life is too busy, and your home is too valuable to keep up with it on your own.</h3>
 
@@ -569,7 +614,7 @@
             </div>
         </div>
         <div class="core-values-section">
-            <h2 class="core-values-heading">The core values of Handyman Connection</h2>
+            <h2 class="core-values-heading">The core values of Ganesh Handyman Solution</h2>
             <div class="core-values-container">
                 <div class="core-value-item">
                     <img src="./assets/images/Main/New/checkmark.png" alt="Check Icon" class="core-value-icon">
@@ -589,13 +634,13 @@
                 </div>
             </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding: 0; margin: 0; padding-top: 20px; margin-bottom: 0;">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner text-center">
+            <div class="carousel-inner text-center" style="margin-bottom: 0; padding-bottom: 0;">
                 <div class="carousel-item active">
                     <img class="d-block carousel-image" src="./assets/images/Main/New/asian-inspired.jpg"
                         alt="First slide" style="width: 80%; height: 300px; object-fit: cover; margin: 0 auto;">
@@ -609,19 +654,24 @@
                         alt="Third slide" style="width: 80%; height: 300px; object-fit: cover; margin: 0 auto;">
                 </div>
             </div>
+        
+            <!-- Previous button -->
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
                 style="width: 5%; height: auto; background: rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); left: 0;">
-                <span class="carousel-control-prev-icon" aria-hidden="true"
-                    style="font-size: 40px; filter: invert(1); font-weight: bold;"></span>
+                <i class="fas fa-chevron-left" style="font-size: 40px; color: white;"></i>
                 <span class="sr-only">Previous</span>
             </a>
+        
+            <!-- Next button -->
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
                 style="width: 5%; height: auto; background: rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); right: 0;">
-                <span class="carousel-control-next-icon" aria-hidden="true"
-                    style="font-size: 40px; filter: invert(1); font-weight: bold;"></span>
+                <i class="fas fa-chevron-right" style="font-size: 40px; color: white;"></i>
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        
+        <footer style="margin-top: 0; padding-top: 0;"></footer>
+        
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -633,18 +683,24 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer-address pt-20"> <!-- Reduced padding top -->
-                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
-                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                            <div class="footer-logo" style="display: flex; align-items: center; ">
+                                <!-- Flex container for logo and text -->
+                                <div class="img-fluid"
+                                    style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;">
+                                    <!-- Set margin to 0 for alignment -->
                                     <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
                                 </div>
-                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
-                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;">
+                                    <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">
+                                        Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
                                 </div>
                             </div>
-                            
+
                             <ul>
                                 <li>
-                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;">
+                                        <!-- Reduced padding top, bottom, and left -->
                                         <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
                                             consequat <br> dignissim finibus enim. </p>
                                     </div>
@@ -682,7 +738,7 @@
                             </ul>
                         </div> <!-- footer address -->
                     </div>
-    
+
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
@@ -694,7 +750,7 @@
                             </ul>
                         </div> <!-- footer link -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
@@ -712,16 +768,16 @@
                             </div>
                         </div> <!-- footer Instagram Feeds -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
-    
+
                             <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
                                 <p>Lorem ipsum dolor sit amet, consectetur <br>
                                     adipiscing elit. Nulla , tempor </p>
                             </div>
-    
+
                             <div class="subscribe_email">
                                 <input type="email" name="email" class="form-control" placeholder="Your email...">
                                 <button class="btn main-btn mouse-hover" type="submit">Subscription
@@ -732,7 +788,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
-    
+
         <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
             <div class="container">
                 <div class="copyright-section d-md-flex align-items-center justify-content-between">
@@ -776,14 +832,11 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
 
-    <!--====== Ajax Contact js ======-->
-    <script src="assets/js/ajax-contact.js"></script>
-
     <!--====== wow.min js ======-->
     <script src="assets/js/wow.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>~
     <script type="text/javascript">
 
 

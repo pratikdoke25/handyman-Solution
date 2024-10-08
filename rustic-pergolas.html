@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         body {
-        font-family: 'YourPreferredFont', sans-serif; /* Replace 'YourPreferredFont' with the desired font, e.g., 'Arial' */
-    }
+            font-family: 'YourPreferredFont', sans-serif;
+            /* Replace 'YourPreferredFont' with the desired font, e.g., 'Arial' */
+        }
+
         .menu-logo {
             display: flex;
             align-items: flex-start;
@@ -237,75 +239,80 @@
         }
 
         /* Responsive Adjustments */
-       /* Responsive Adjustments */
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .features-container,
-    .introduction {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        margin: 10px;
-    }
+        /* Responsive Adjustments */
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
 
-    .image-man,
-    .features,
-    .intro-image,
-    .intro-content {
-        max-width: 100%;
-        padding: 0 10px;
-    }
+            .features-container,
+            .introduction {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                margin: 10px;
+            }
 
-    .intro-image iframe {
-        height: auto;
-    }
+            .image-man,
+            .features,
+            .intro-image,
+            .intro-content {
+                max-width: 100%;
+                padding: 0 10px;
+            }
 
-    .intro-image img,
-    .image-man img {
-        height: auto;
-        width: 100%;
-        object-fit: contain;
-    }
+            .intro-image iframe {
+                height: auto;
+            }
 
-    .header h1 {
-        font-size: 2em;
-    }
+            .intro-image img,
+            .image-man img {
+                height: auto;
+                width: 100%;
+                object-fit: contain;
+            }
 
-    .header p {
-        font-size: 1em;
-    }
+            .header h1 {
+                font-size: 2em;
+            }
 
-    .gallery-container img {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+            .header p {
+                font-size: 1em;
+            }
 
-    .contact {
-        padding: 20px 10px;
-    }
+            .gallery-container img {
+                width: 100%;
+                margin-bottom: 15px;
+            }
 
-    .contact-button {
-        width: 80%;
-        padding: 10px;
-    }
+            .contact {
+                padding: 20px 10px;
+            }
 
-    .features p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
+            .contact-button {
+                width: 80%;
+                padding: 10px;
+            }
 
-    .banner-title {
-        font-size: 80px; /* Further reduce font size */
-        padding: 0 5px; /* Add padding to avoid text touching the edges */
-        max-width: 100%; /* Ensure text does not go beyond the image */
-        white-space: normal; /* Allow text to wrap */
-        
-    }
+            .features p {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
 
-    .gallery-container {
-        gap: 10px;
-    }
-}
+            .banner-title {
+                font-size: 80px;
+                /* Further reduce font size */
+                padding: 0 5px;
+                /* Add padding to avoid text touching the edges */
+                max-width: 100%;
+                /* Ensure text does not go beyond the image */
+                white-space: normal;
+                /* Allow text to wrap */
+
+            }
+
+            .gallery-container {
+                gap: 10px;
+            }
+        }
 
 
         /* Image Banner css */
@@ -348,6 +355,34 @@
             /* Hide any overflow */
             text-overflow: ellipsis;
             /* Optional: Add ellipsis if text is too long */
+        }
+
+        .image-banner-home {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-banner-home img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image-banner-home:hover img {
+            transform: scale(1.1);
+            /* Zoom-in effect */
+        }
+
+        /* Optional: Styling for the text over the image */
+        .banner-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
     </style>
 
@@ -457,7 +492,38 @@
         </div> <!-- header mobile menu -->
 
     </header>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
 
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="/home-page.html">Home</a>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="cleaning.html">Cleaning Services</a></li>
+                                <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                <li><a href="painting.html">Painting</a></li>
+                                <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                <li><a href="services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Why Choose Us</a>
+                        </li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
     <!-- Main Section started -->
 
     <section>
@@ -465,6 +531,7 @@
             <img src="./assets/images/Main/Brown_wooden.png" alt="Brown Wooden Background">
             <h1 class="banner-title">Rustic Pergolas And Bars</h1>
         </div>
+
 
         <!-- image with man and key features -->
         <div class="features-container">
@@ -544,18 +611,24 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer-address pt-20"> <!-- Reduced padding top -->
-                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
-                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                            <div class="footer-logo" style="display: flex; align-items: center; ">
+                                <!-- Flex container for logo and text -->
+                                <div class="img-fluid"
+                                    style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;">
+                                    <!-- Set margin to 0 for alignment -->
                                     <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
                                 </div>
-                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
-                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;">
+                                    <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">
+                                        Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
                                 </div>
                             </div>
-                            
+
                             <ul>
                                 <li>
-                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;">
+                                        <!-- Reduced padding top, bottom, and left -->
                                         <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
                                             consequat <br> dignissim finibus enim. </p>
                                     </div>
@@ -593,7 +666,7 @@
                             </ul>
                         </div> <!-- footer address -->
                     </div>
-    
+
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
@@ -605,7 +678,7 @@
                             </ul>
                         </div> <!-- footer link -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
@@ -623,16 +696,16 @@
                             </div>
                         </div> <!-- footer Instagram Feeds -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
-    
+
                             <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
                                 <p>Lorem ipsum dolor sit amet, consectetur <br>
                                     adipiscing elit. Nulla , tempor </p>
                             </div>
-    
+
                             <div class="subscribe_email">
                                 <input type="email" name="email" class="form-control" placeholder="Your email...">
                                 <button class="btn main-btn mouse-hover" type="submit">Subscription
@@ -643,7 +716,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
-    
+
         <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
             <div class="container">
                 <div class="copyright-section d-md-flex align-items-center justify-content-between">

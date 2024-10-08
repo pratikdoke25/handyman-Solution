@@ -46,17 +46,6 @@
             /* Increase the height of the image */
         }
 
-        .menu-logo div {
-            margin-top: 5px;
-            /* Adds some space between the image and text */
-            font-size: 16px;
-            /* Adjust text size as needed */
-            margin-left: 70px;
-            margin-top: 10px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
         .full-width-image {
             position: relative;
             display: inline-block;
@@ -221,11 +210,11 @@
             /* Set a maximum width for the image */
             border-radius: 5px;
             /* Optional: add border-radius to the image */
+            transition: transform 0.5s ease;
         }
 
         .services-description {
             flex: 1;
-            /* Allow the text container to take remaining space */
         }
 
         .services-list {
@@ -280,6 +269,67 @@
                 /* Align list items to the left */
             }
         }
+        .services-description p {
+    font-size: 1.2em; /* Adjust the size as needed */
+}
+
+.services-list li {
+    margin-top: 20px;
+    font-size: 1.1em; /* Adjust the size as needed */
+    margin-bottom: 0.5em; /* Add space between list items */
+}
+
+        /* Image zoom effect */
+        .full-width-image {
+            position: relative;
+            overflow: hidden;
+            /* Ensures the image doesn't go outside the container */
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            /* Smooth zoom transition */
+        }
+
+        .full-width-image:hover img {
+            transform: scale(1.1);
+            /* Zoom-in effect on hover */
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* first image animation */
+
+
+.image-container:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+.reasons-image {
+    overflow: hidden; /* Prevents overflow */
+    position: relative; /* Required for absolute positioning */
+}
+
+.reasons-image img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.reasons-image:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
     </style>
 
 </head>
@@ -347,20 +397,20 @@
                             <div class="navbar-menu">
                                 <ul class="">
                                     <li>
-                                        <a href="index2.html">Home <i class="flaticon-add-1"></i></a>
+                                        <a href="home-page.html">Home</a>
                                     </li>
 
                                     <li><a href="javascript:void(0)">Services <i class="flaticon-add-1"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="services.html">Cleaning Services</a></li>
-                                            <li><a href="dry-wall1.html">Drywall</a></li>
-                                            <li><a href="Paiting.html">Painting</a></li>
-                                            <li><a href="Rustic_Pergolas1.html">Rustic Pergolas And Bars</a></li>
-                                            <li><a href="Home-maintainces.html">Maintenance</a></li>
+                                            <li><a href="cleaning.html">Cleaning Services</a></li>
+                                            <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                            <li><a href="painting.html">Painting</a></li>
+                                            <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                            <li><a href="home-Maintenance.html">Maintenance</a></li>
                                             <li><a href="services.html">Other services</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="why-choose2.html">Why Choose Us</a>
+                                    <li><a href="why-choose-us.html">Why Choose Us</a>
                                     <li><a href="contact.html">Contact Us</a></li>
                                     </li>
                                 </ul>
@@ -389,7 +439,38 @@
         <!-- header mobile menu -->
 
     </header>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
 
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="/home-page.html">Home</a>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="cleaning.html">Cleaning Services</a></li>
+                                <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                <li><a href="painting.html">Painting</a></li>
+                                <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                <li><a href="services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Why Choose Us</a>
+                        </li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
     <!-- Main Section started -->
 
     <main>
@@ -399,6 +480,7 @@
                 <h1>Home Maintenance & Installations</h1>
             </div>
         </div>
+
         <section class="reasons">
             <div class="reasons-container">
                 <div class="reasons-image">
@@ -441,13 +523,12 @@
             <div class="image-container">
                 <img src="./assets/images/Main/Home/MV_0604_0723.webp" alt="">
             </div>
+            
             <div class="services-description">
                 <p>
                     Our craftsmen strive to provide our customers with the highest quality of home maintenance services
-                    available.
-                    That’s why we offer a large number of projects and options in our catalog for our customers to
-                    request and choose from.
-                    From big to small home improvement services, we are here for you.
+                    available. That’s why we offer a large number of projects and options in our catalog for our customers to
+                    request and choose from. From big to small home improvement services, we are here for you.
                 </p>
                 <ul class="services-list">
                     <li>Window repairs</li>
@@ -461,10 +542,9 @@
                     <li>Hang pictures and mirrors</li>
                     <li>Install blinds and window coverings</li>
                     <li>Replace or Install doorknobs, deadbolts, and door hardware</li>
-                    <li>Change batteries in smoke and carbon monoxide detectors</li>
-                    <li>Hang Christmas lights and other holiday decorations</li>
                 </ul>
             </div>
+            
         </section>
 
     </main>
@@ -477,18 +557,24 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer-address pt-20"> <!-- Reduced padding top -->
-                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
-                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                            <div class="footer-logo" style="display: flex; align-items: center; ">
+                                <!-- Flex container for logo and text -->
+                                <div class="img-fluid"
+                                    style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;">
+                                    <!-- Set margin to 0 for alignment -->
                                     <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
                                 </div>
-                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
-                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;">
+                                    <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">
+                                        Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
                                 </div>
                             </div>
-                            
+
                             <ul>
                                 <li>
-                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;">
+                                        <!-- Reduced padding top, bottom, and left -->
                                         <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla , tempor
                                             consequat <br> dignissim finibus enim. </p>
                                     </div>
@@ -526,7 +612,7 @@
                             </ul>
                         </div> <!-- footer address -->
                     </div>
-    
+
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
@@ -538,7 +624,7 @@
                             </ul>
                         </div> <!-- footer link -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
@@ -556,16 +642,16 @@
                             </div>
                         </div> <!-- footer Instagram Feeds -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
-    
+
                             <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
                                 <p>Lorem ipsum dolor sit amet, consectetur <br>
                                     adipiscing elit. Nulla , tempor </p>
                             </div>
-    
+
                             <div class="subscribe_email">
                                 <input type="email" name="email" class="form-control" placeholder="Your email...">
                                 <button class="btn main-btn mouse-hover" type="submit">Subscription
@@ -576,7 +662,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
-    
+
         <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
             <div class="container">
                 <div class="copyright-section d-md-flex align-items-center justify-content-between">
@@ -598,7 +684,7 @@
             </div> <!-- container -->
         </div> <!-- footer copyright -->
     </footer>
-    
+
 
     <!--====== FOOTER PART ENDS ======-->
 

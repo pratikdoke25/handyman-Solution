@@ -163,23 +163,25 @@
             /* Interactive hover effect */
         }
         .full-width-image {
-            width: 100%;
-            height: 800px;
-            /* Set a fixed height for the container */
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
+    width: 100%;
+    height: 600px; /* Set a smaller fixed height for the container */
+    overflow: hidden; /* Prevent overflow */
+    margin: 0;
+    padding: 0;
+    position: relative; /* Enable positioning of child elements */
+}
 
-        .full-width-image img {
-            width: 100%;
-            height: 100%;
-            /* Set the height to match the container height */
-            object-fit: cover;
-            /* Ensures the image fills the container without distortion */
-            display: block;
-            /* Remove extra spacing below the image */
-        }
+.full-width-image img {
+    width: 100%;
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    max-height: 100%; /* Limit the maximum height to the container's height */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    display: block; /* Remove extra spacing below the image */
+    position: relative; /* Enable precise positioning */
+    bottom: 0; /* Align image to the bottom of the container */
+    left: 0; /* Align image to the left */
+}
+
 
         .container1 {
             display: flex;
@@ -434,6 +436,28 @@
         text-align: center;
     }
 }
+.full-width-image {
+    overflow: hidden; /* Prevent overflow */
+}
+
+.zoom-image {
+    width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.full-width-image:hover .zoom-image {
+    transform: scale(1.1); /* Zoom in the image on hover */
+}
+img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
 
     </style>
 
@@ -544,13 +568,45 @@
         </div> <!-- header mobile menu -->
 
     </header>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas-menu">
+            <a class="close-mobile-menu" href="javascript:void(0)"><i class="flaticon-x-mark"></i></a>
 
+            <div class="mobile-menu pt-30">
+                <nav>
+                    <ul>
+
+                        <li class="menu-item-has-children"><a class="active" href="/home-page.html">Home</a>
+                        </li>
+
+
+                        <li class="menu-item-has-children"><a href="#">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="cleaning.html">Cleaning Services</a></li>
+                                <li><a href="dry-wall-repair.html">Drywall</a></li>
+                                <li><a href="painting.html">Painting</a></li>
+                                <li><a href="rustic-pergolas.html">Rustic Pergolas And Bars</a></li>
+                                <li><a href="home-Maintenance.html">Maintenance</a></li>
+                                <li><a href="services.html">Other services</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Why Choose Us</a>
+                        </li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
     <!-- Main Section started -->
 
     <main>
         <div class="full-width-image">
-            <img src="./assets/images/Main/cleaning (4).png" alt="Full Width Image">
+            <img src="./assets/images/Main/cleaning (4).png" alt="Full Width Image" class="zoom-image">
         </div>
+        
 
         <section class="intro-clean">
             <h1 style="text-align: center; font-weight: bold">A Clean Home is a Healthy Home</h1>
@@ -564,15 +620,24 @@
                 <img src="./assets/images/Main/cleaining.png" alt="Cleaning Services">
                 <div class="reasons-content">
                     <h1>Cleaning</h1>
-                    <p>Here's the updated text with "plumbing" replaced by "cleaning":
-
-                        "Cleaning
+                    <p> Cleaning
                         Perhaps you've been clueless to the dusty shelves. Alternatively, it may be time to deep clean
                         your old carpets. Whatever your cleaning issues are, Handyman Connection can help. Our
                         professional cleaners can handle everything from dusting and vacuuming to cleaning windows and
                         more. All our cleaning work is done by expert cleaners who will work with you to discover the
                         best solution for your home. Call or request an estimate online today to find a cleaner near
                         you."</p>
+                        <ul>
+                            <li>Residential cleaning</li>
+                            <li>Commercial cleaning</li>
+                            <li>Deep cleaning</li>
+                            <li>Move-in/move-out cleaning</li>
+                            <li>Carpet cleaning</li>
+                            <li>Window washing</li>
+                            <li>Pressure washing</li>
+                            <li>Handyman repairs</li>
+                        </ul>
+                        
                 </div>
             </div>
         </section>
@@ -825,6 +890,10 @@
             counter++;
             updateCarousel();
         }, 3000);
+        $(function () {
+    // Fade in the image on page load
+    $('.fade-in-image').fadeIn(1500); // Adjust duration (1500ms) as needed
+});
 
     </script>
 
