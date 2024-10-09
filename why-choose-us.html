@@ -140,7 +140,7 @@
 
         /* Unordered List Styling */
         ul {
-            list-style-type: disc;
+            /* list-style-type: disc; */
             /* margin-bottom: 20px; */
         }
 
@@ -410,10 +410,24 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    /* color: white; */
     font-size: 24px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+/* footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-area {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footer-area, .footer-widget, .footer-copyright {
+    margin-bottom: 0;
+    padding-bottom: 0;
+} */
 
     </style>
 
@@ -469,7 +483,7 @@
                     <div class="row">
                         <div class="col-lg-2">
                             <div class="menu-logo">
-                                <a class="logo" href="index2.html">
+                                <a class="logo" href="index.html">
                                     <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
                                     <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
                                 </a>
@@ -779,10 +793,36 @@
                             </div>
 
                             <div class="subscribe_email">
-                                <input type="email" name="email" class="form-control" placeholder="Your email...">
-                                <button class="btn main-btn mouse-hover" type="submit">Subscription
-                                    <span></span></button>
+                                <form id="subscriptionForm">
+                                    <input type="email" id="emailInput" class="form-control" placeholder="Your email..." required>
+                                    <button class="btn main-btn mouse-hover" type="submit">Subscribe
+                                        <span></span>
+                                    </button>
+                                </form>
+                                <p id="message" style="display:none; color: green; font-weight: bold;">Subscription successful!</p>
                             </div>
+                            
+                            <script>
+                                document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+                                    event.preventDefault(); // Prevent the form from reloading the page
+                            
+                                    // Get the email value
+                                    var email = document.getElementById('emailInput').value;
+                            
+                                    // Print the email in the console
+                                    console.log("Subscribed email:", email);
+                            
+                                    // Display success message
+                                    document.getElementById('message').style.display = 'block';
+                            
+                                    // Show an alert message
+                                    alert("Subscribed successfully");
+                            
+                                    // Clear the input field after subscription
+                                    document.getElementById('emailInput').value = '';
+                                });
+                            </script>
+                            
                         </div> <!-- footer link -->
                     </div>
                 </div> <!-- row -->

@@ -586,7 +586,7 @@
                     <div class="row">
                         <div class="col-lg-2">
                             <div class="menu-logo">
-                                <a class="logo" href="index2.html">
+                                <a class="logo" href="index.html">
                                     <img src="assets/images/Main/logo/ganesha-logo2.png" class="white-logo" alt="Logo">
                                     <img src="assets/images/Main/logo/ganesha-logo2.png" class="light-logo" alt="Logo">
 
@@ -822,10 +822,10 @@
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
                             <ul>
-                                <li><a href="#"><i class="icofont-rounded-right"></i>Home</a></li>
-                                <li><a href="#"><i class="icofont-rounded-right"></i>Services</a></li>
-                                <li><a href="#"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
-                                <li><a href="#"><i class="icofont-rounded-right"></i>Contact Us</a></li>
+                                <li><a href="index.html"><i class="icofont-rounded-right"></i>Home</a></li>
+                                <li><a href="cleaning.html"><i class="icofont-rounded-right"></i>Services</a></li>
+                                <li><a href="why-choose-us.html"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="contact.html"><i class="icofont-rounded-right"></i>Contact Us</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -858,10 +858,36 @@
                             </div>
 
                             <div class="subscribe_email">
-                                <input type="email" name="email" class="form-control" placeholder="Your email...">
-                                <button class="btn main-btn mouse-hover" type="submit">Subscription
-                                    <span></span></button>
+                                <form id="subscriptionForm">
+                                    <input type="email" id="emailInput" class="form-control" placeholder="Your email..." required>
+                                    <button class="btn main-btn mouse-hover" type="submit">Subscribe
+                                        <span></span>
+                                    </button>
+                                </form>
+                                <p id="message" style="display:none; color: green; font-weight: bold;">Subscription successful!</p>
                             </div>
+                            
+                            <script>
+                                document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+                                    event.preventDefault(); // Prevent the form from reloading the page
+                            
+                                    // Get the email value
+                                    var email = document.getElementById('emailInput').value;
+                            
+                                    // Print the email in the console
+                                    console.log("Subscribed email:", email);
+                            
+                                    // Display success message
+                                    document.getElementById('message').style.display = 'block';
+                            
+                                    // Show an alert message
+                                    alert("Subscribed successfully");
+                            
+                                    // Clear the input field after subscription
+                                    document.getElementById('emailInput').value = '';
+                                });
+                            </script>
+                            
                         </div> <!-- footer link -->
                     </div>
                 </div> <!-- row -->
