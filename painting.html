@@ -461,18 +461,24 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer-address pt-20"> <!-- Reduced padding top -->
-                            <div class="footer-logo" style="display: flex; align-items: center; "> <!-- Flex container for logo and text -->
-                                <div class="img-fluid" style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;"> <!-- Set margin to 0 for alignment -->
+                            <div class="footer-logo" style="display: flex; align-items: center; ">
+                                <!-- Flex container for logo and text -->
+                                <div class="img-fluid"
+                                    style="width: 150px; height: auto; margin-left: -40px; margin-bottom: -50px;">
+                                    <!-- Set margin to 0 for alignment -->
                                     <img src="./assets/images/Main/logo/ganesha-logo2.png" alt="Ganesh Logo">
                                 </div>
-                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;"> <!-- Adjust margin for spacing between logo and text -->
-                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
+                                <div class="company-name" style="margin-left: -10px;margin-bottom: -45px;">
+                                    <!-- Adjust margin for spacing between logo and text -->
+                                    <h4 class="text mb-0" style="font-weight: bold; padding-left: 0%;color: aliceblue;">
+                                        Ganesh HandyMan Solutions</h4> <!-- Text next to logo -->
                                 </div>
                             </div>
-                            
+
                             <ul>
                                 <li>
-                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;"> <!-- Reduced padding top, bottom, and left -->
+                                    <div class="footer-text pt-20 pb-20" style="padding-left: 0;">
+                                        <!-- Reduced padding top, bottom, and left -->
                                         <p>Ganesh Handyman Service provides quick,<br> reliable home repairs and
                                             maintenance, <br> including plumbing, electrical work, <br> painting, and more.
                                             Quality work, every time.</p>
@@ -494,7 +500,7 @@
                                             <i class="flaticon-placeholder"></i>
                                         </div>
                                         <div class="address-content media-body">
-                                            <p class="text">+352-807-5248</p>
+                                            <p class="text"> +352-807-5248</p>
                                         </div>
                                     </div> <!-- single address -->
                                 </li>
@@ -511,19 +517,20 @@
                             </ul>
                         </div> <!-- footer address -->
                     </div>
-    
+
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Company </h4> <!-- Reduced margin bottom -->
                             <ul>
                                 <li><a href="index.html"><i class="icofont-rounded-right"></i>Home</a></li>
                                 <li><a href="cleaning.html"><i class="icofont-rounded-right"></i>Services</a></li>
-                                <li><a href="why-choose-us.html"><i class="icofont-rounded-right"></i>Why Choose Us</a></li>
+                                <li><a href="why-choose-us.html"><i class="icofont-rounded-right"></i>Why Choose Us</a>
+                                </li>
                                 <li><a href="contact.html"><i class="icofont-rounded-right"></i>Contact Us</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-instagram pt-20"> <!-- Reduced padding top -->
                             <h4 class="footer-title mb-15">Instagram </h4> <!-- Reduced margin bottom -->
@@ -541,52 +548,48 @@
                             </div>
                         </div> <!-- footer Instagram Feeds -->
                     </div>
-    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link pt-20"> <!-- Reduced padding top -->
-                            <h4 class="footer-title mb-15">Newsletter</h4> <!-- Fixed typo and reduced margin bottom -->
-    
+                            <h4 class="footer-title mb-15">About Us</h4> <!-- Fixed typo and reduced margin bottom -->
+
                             <div class="email-sub-content pt-10 pb-20"> <!-- Reduced padding top and bottom -->
-                                <p>Subscribe to our newsletter for the latest updates, exclusive offers, and helpful tips delivered straight to your inbox.</p>
+                                <p>At Ganesh Handyman Services, we prioritize the safety and cleanliness of every space
+                                    we work on. To prevent any risk of cross-contamination, we use dedicated cleaning
+                                    cloths and sponges exclusively for each client. This approach ensures that every
+                                    project is handled with the utmost care and attention, providing you with a clean
+                                    and safe environment every time we visit."
+
+                                    This reflects Ganesh Handyman Services' commitment to hygiene and high standards in
+                                    our cleaning practices.</p>
                             </div>
-    
-                            <div class="subscribe_email">
-                                <form id="subscriptionForm">
-                                    <input type="email" id="emailInput" class="form-control" placeholder="Your email..." required>
-                                    <button class="btn main-btn mouse-hover" type="submit">Subscribe
-                                        <span></span>
-                                    </button>
-                                </form>
-                                <p id="message" style="display:none; color: green; font-weight: bold;">Subscription successful!</p>
-                            </div>
-                            
                             <script>
-                                document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+                                document.getElementById('subscriptionForm').addEventListener('submit', function (event) {
                                     event.preventDefault(); // Prevent the form from reloading the page
-                            
+
                                     // Get the email value
                                     var email = document.getElementById('emailInput').value;
-                            
+
                                     // Print the email in the console
                                     console.log("Subscribed email:", email);
-                            
+
                                     // Display success message
                                     document.getElementById('message').style.display = 'block';
-                            
+
                                     // Show an alert message
                                     alert("Subscribed successfully");
-                            
+
                                     // Clear the input field after subscription
                                     document.getElementById('emailInput').value = '';
                                 });
                             </script>
-                            
+
                         </div> <!-- footer link -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
-    
+
         <div class="footer-copyright pt-10 pb-10"> <!-- Reduced padding top and bottom -->
             <div class="container">
                 <div class="copyright-section d-md-flex align-items-center justify-content-between">

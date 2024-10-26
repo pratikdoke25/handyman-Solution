@@ -4609,7 +4609,7 @@ img.preload-logo {
 }
 
 .footer_style2 .footer-address .footer-text p {
-    color: #A9AAAC
+    color: #fff
 }
 
 .footer_style2 .footer-address .single-address .address-icon i {
@@ -4619,7 +4619,7 @@ img.preload-logo {
     line-height: 40px;
     border-radius: 50%;
     font-size: 20px;
-    color: #A9AAAC
+    color: #fff
 }
 
 .footer_style2 .footer-address .single-address .address-content {
@@ -4627,7 +4627,7 @@ img.preload-logo {
 }
 
 .footer_style2 .footer-address .single-address .address-content .text {
-    color: #A9AAAC;
+    color: #fff;
     line-height: 35px
 }
 
@@ -4642,7 +4642,7 @@ img.preload-logo {
 
 .footer_style2 .footer-link ul li a {
     font-size: 17px;
-    color: #A9AAAC;
+    color: #fff;
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     -ms-transition: all .3s ease-out 0s;
@@ -4680,7 +4680,7 @@ img.preload-logo {
 }
 
 .footer_style2 .footer-link .email-sub-content p {
-    color: #A9AAAC
+    color: #fff
 }
 
 .footer_style2 .footer-link .subscribe_email {
